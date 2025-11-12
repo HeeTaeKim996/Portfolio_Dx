@@ -278,7 +278,7 @@ void Model::ReadModel()
 				vector<ModelVertexType> vertices;
 				vertices.resize(count);
 
-				file->Read((void*)vertices.data(), sizeof(ModelVertexType) * count); // 강의 코드랑 다름 (수정)
+				file->Read((void*)vertices.data(), sizeof(ModelVertexType) * count);
 				mesh->geometry->AddVertices(vertices);
 
 				
@@ -658,18 +658,16 @@ void Model::BindCacheInfo()
 {
 	for (const shared_ptr<ModelMesh>& mesh : _meshes)
 	{
-		if (mesh->material == nullptr) // Mesh 에 material 이 할당되지 않았다면, 캐싱
+		if (mesh->material == nullptr)
 		{
 			mesh->material = GetMaterialByName(mesh->materialName);
 		}
-		if (mesh->bone == nullptr) // Mesh 에 Bone 이 할당되지 않았다면, 캐싱
+		if (mesh->bone == nullptr)
 		{
 			mesh->bone = GetBoneByIndex(mesh->boneIndex);
 		}
 	}
 
-
-	// Bone 계층 정보 채우기
 	if (_root == nullptr && _bones.size() > 0)
 	{
 		_root = _bones[0];

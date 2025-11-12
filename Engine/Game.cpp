@@ -28,7 +28,6 @@
 #if 1
 
 extern IMGUI_IMPL_API LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
-// �� �Լ��� .h �� ������� �ʰ�, .cpp �� �����θ� �ԷµƱ⿡, ��ó�� extern ���� ����
 
 
 WPARAM Game::Run(GameDesc& desc)
@@ -39,16 +38,14 @@ WPARAM Game::Run(GameDesc& desc)
 	_desc.height = 1000;
 
 
-	// 1) ������ â ���� ���
 	MyRegisterClass();
 
-	// 2) ������ â ����
-	if (!InitInstance(SW_SHOWNORMAL)) // �� SW_SHOWNORMAL : nCmdShow(â �ּ�,�ִ�,�Ϲ� �� ������) �� �⺻�� �ǹ�
+	if (!InitInstance(SW_SHOWNORMAL))
 		return FALSE;
 
 	GRAPHICS->Init(_desc.hWnd);
 	INPUT->Init(_desc.hWnd);
-	IMGUI->Init(); // �� ���� ��.. ���� 60.ImGUI ���� �϶���� ��..
+	IMGUI->Init(); 
 
 
 	InitGame();
@@ -122,7 +119,6 @@ LRESULT CALLBACK Game::WndProc(HWND handle, UINT message, WPARAM wParam, LPARAM 
 {
 	if (ImGui_ImplWin32_WndProcHandler(handle, message, wParam, lParam))
 		return true;
-	// ������ �޼����� ImGui ����ü�� �켱 �ݿ�. ImGui �� ���õ� �޼������, ���� �޼����� ó�� X
 
 	switch (message)
 	{
@@ -242,7 +238,7 @@ void Game::StartEditScene()
 	_gameState = GameState::Edit;
 	isColliderRender = true;
 
-	{ // @@ �ӽ� �ݶ��̴� EditScene �� ���̰� �ϱ� ����..
+	{ 
 		vector<shared_ptr<GameObject>> gameObjects = _scene->GetGameObjects();
 		for (shared_ptr<GameObject> gameObject : gameObjects)
 		{
@@ -279,9 +275,7 @@ void Game::StartPlayScene()
 	SwitchScene(SCENE->GetSceneByIndex(_sceneIndex)->Clone());
 
 	_gameState = GameState::Play;
-	// �� ���� ����. Scene�� AddGameObject ���� GameState �� Play ��, �ΰ��� �� Awake, OnEnable, OnDisable ȣ���̹Ƿ�, Scene ���翡����
-	//   Scene->AddGameObject ���� �ߵ��ϸ� �ȵǹǷ�, �� SwitchScene ���Ŀ�, GameState �ٲٱ�
-
+	
 	PHYSICS->Initialize();
 
 	isColliderRender = false;
@@ -299,8 +293,8 @@ void Game::UpdateEditScene()
 	GRAPHICS->RenderBegin();
 
 
-	_scene->EditUpdate(); // @@ Edit ī�޶�(���ӿ�����Ʈ ��� x) �� �̵� �� ���� ó����, EidtUpdate ���.
-	//_scene->Update(); // �ӽ÷� �ΰ��� ������ Update ���
+	_scene->EditUpdate();
+	
 
 	IMGUI->Update();
 	{
@@ -313,7 +307,7 @@ void Game::UpdateEditScene()
 
 	if (_gameState == GameState::Edit)
 	{
-		UpdateEditControllingObject(); // ���� ����. sceneEditUpdate => ImGUI->PostHierachy => �ش� �ڵ� ���� �ʿ�.
+		UpdateEditControllingObject();
 	}
 
 
@@ -368,14 +362,6 @@ void Game::UpdatePlayScene()
 
 	if (isGamePaused && IMGUI->PostPausePanel())
 	{
-		/* - �̷��� if false �� ��ġ�� ������, ���� ���� ��ư�� ������, ���� scene �� ���� �ȴ�.
-			 ������ UpdatePlayScene �� ����Ǿ�, ������ ���� �ʱ�ȭ�� Scene �� Update, LateUpdate,
-			 Render�� ȣ��Ǳ� ������, Start, Awake ���� �Ҵ��ؾ� �Ѵ� �������� nullptr�� �Ǿ� ũ���ð�
-			 ����.
-		   - �׷��� ó������ if true -> return; ���� �Լ� ��ü�� �����غ��� �ߴµ�, ImGui ���� ����ߴµ�
-			 Render �� ���� �ʾҴ� �ؼ� �� ũ���ð� ������.
-		   - �� ������ �޾�, ����ó�� �ڵ尡 ������											*/
-
 		IMGUI->Render();
 		return;
 	}
@@ -964,7 +950,7 @@ void Game::UpdateEditControllingObject()
 
 
 
-#if 0 //First
+#if 0 // Obsolate
 WPARAM Game::Run(GameDesc& desc)
 {
 	_desc = desc;

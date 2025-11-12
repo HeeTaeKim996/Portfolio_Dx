@@ -84,10 +84,10 @@ private:
 
 	void SwitchScene(shared_ptr<Scene> Scene);
 
-	/* Temp Edit Controlling Object STart */
+	/* Temp Edit Controlling Object Start */
 private:
 	// TEMP
-	shared_ptr<GameObject> _editControllingObject; // SwitchSCene 함수에서 nullptr 할당으로 shared_ptr 관리
+	shared_ptr<GameObject> _editControllingObject; 
 	float editControllingObjects_MovementSpeed = 30.f;
 	float editControllingObjects_RotateSpeed = 40.f;
 	
@@ -99,7 +99,6 @@ public:
 	shared_ptr<GameObject> _editPointer_ZAxis_Reverse;
 
 public:
-	// TEMP
 	void SetEditControllingObject(shared_ptr<GameObject> go) { _editControllingObject = go; }
 	void UpdateEditControllingObject();
 	/* Temp Edit Controlling Object End */
