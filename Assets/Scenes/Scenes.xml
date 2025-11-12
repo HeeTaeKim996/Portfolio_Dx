@@ -7,8 +7,8 @@
                 <PrefabName>Camera</PrefabName>
                 <Transform>
                     <Scale X="1" Y="1" Z="1"/>
-                    <Rotation X="0.00059701985" Y="0.67091137" Z="0.0025058824" W="-0.74155062"/>
-                    <Translation X="-21.605139" Y="42.813942" Z="-234.43036"/>
+                    <Rotation X="0.095999129" Y="0.74670279" Z="-0.10689821" W="-0.64947689"/>
+                    <Translation X="-13.617597" Y="75.860176" Z="-233.48152"/>
                 </Transform>
             </GameObject>
             <GameObject>

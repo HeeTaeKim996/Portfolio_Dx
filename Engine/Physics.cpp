@@ -608,45 +608,10 @@ void Physics::PhysicsUpdate()
 	}
 }
 
-bool Physics::Raycast(const myRay& ray, BaseCollider* retCollider)
+bool Physics::Raycast(const myRay& ray, BaseCollider* retCollider, Layermask layermask/*=ALL*/)
 {
-	float minDist = FLT_MAX;
-
-	for (int i = 0; i < proxies.size(); i++)
-	{
-		const ClProxy& proxy = proxies[i];
-		float distance;
-		if (ray.Intersect(proxy.AABB.min, proxy.AABB.max, distance))
-		{
-			BaseCollider* collider = proxy.ptr;
-			if (collider->Intersects(ray, distance))
-			{
-				if (distance < minDist)
-				{
-					minDist = distance;
-					retCollider = collider;
-				}
-			}
-		}
-	}
-
-	return minDist != FLT_MAX;
-}
-
-bool Physics::Raycast(const myRay& ray, BaseCollider* retCollider, Layermask layermask)
-{
-	uint8 layer;
-	if (layermask == Layermask::End)
-	{
-		layer = (((uint8)Layermask::End - 1) << 1) - 1;
-	}
-	else
-	{
-		layer = (uint8)layermask;
-	}
-
-
-
+	uint8 layer = layer = (uint8)layermask;
+	
 	float minDist = FLT_MAX;
 
 	for (int i = 0; i < proxies.size(); i++)

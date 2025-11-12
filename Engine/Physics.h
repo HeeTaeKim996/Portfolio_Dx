@@ -64,8 +64,7 @@ private:
 public:
 	void PhysicsUpdate();
 
-	bool Raycast(const myRay& ray, BaseCollider* retCollider);
-	bool Raycast(const myRay& ray, BaseCollider* retCollider, Layermask layermask);
+	bool Raycast(const myRay& ray, BaseCollider* retCollider, Layermask layermask = Layermask::ALL);
 	BaseCollider* CapsuleCast(const myRay& ray, float radius, Layermask layerMask = Layermask::ALL);
 	vector<::pair<BaseCollider*, ContactInfo>> Sphere(const myVec3& center, const float& radius, Layermask layerMask = Layermask::ALL);
 
