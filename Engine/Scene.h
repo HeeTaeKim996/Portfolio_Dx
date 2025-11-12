@@ -68,7 +68,7 @@ private:
 	uint32 _gameObjectAddingIndex = 0;
 	shared_ptr<CircDbLinkedList> _circDbLinkedList;
 
-public: // юс╫ц Public
+public: // О©╫с╫О©╫ Public
 	shared_ptr<GameObject> _skyObject;
 };
 

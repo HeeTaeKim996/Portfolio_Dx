@@ -8,7 +8,6 @@ enum class ResourceType : int8
 	Shader,
 	Texture,
 	Material,
-	//Animation, // OBSOLATE
 	Model,
 
 	End

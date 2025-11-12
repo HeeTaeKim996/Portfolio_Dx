@@ -1,7 +1,6 @@
 #pragma once
 #include "ResourceBase.h"
-
-#include "RenderManager.h" // @@@ 순환참조 될 것 우려된다... 우선은 MaterialDesc 때문에 사용함..
+#include "RenderManager.h" 
 
 class MeshRenderer;
 class Shader;
