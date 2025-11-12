@@ -42,7 +42,7 @@ shared_ptr<Scene> SceneManager::Initialize(bool isHardCodeLoad)
 
 
 
-			{ // @@@@@@@@@@@@@ SKY 하드코딩 ( ImGUI 로 만들기 번거로워 우선은 하드코딩함 ) @@@@@@@@@@@@@@@@@@@@@@
+			{ 
 
 				scene->_skyObject = PREFAB->GetPrefab("Sky_Space");
 			}

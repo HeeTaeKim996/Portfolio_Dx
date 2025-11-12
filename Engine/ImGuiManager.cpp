@@ -13,33 +13,33 @@
 
 void ImGuiManager::Init()
 {
-	IMGUI_CHECKVERSION();	// 버전 체크
-	ImGui::CreateContext();	// IMGUI 의 DC? 역할 생성
-	ImGuiIO& io = ImGui::GetIO(); (void)io;	//입출력 설정 구조체. (void)io; 일시, io 변수를 쓰지 않아도 경고하지 말라? 
+	IMGUI_CHECKVERSION();	
+	ImGui::CreateContext();	
+	ImGuiIO& io = ImGui::GetIO(); (void)io;
 	io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;     // Enable Keyboard Controls
 	io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;      // Enable Gamepad Controls
 
 	// Setup Dear ImGui style
-	ImGui::StyleColorsDark();	// 기본 UI 테마를 다크 테마로 설정
+	ImGui::StyleColorsDark();	
 	//ImGui::StyleColorsLight();
 
 	 //Setup Platform/Renderer backends
-	ImGui_ImplWin32_Init(GAME->GetGameDesc().hWnd);	// win32 루프 메세지와 imgui 를 연결
-	ImGui_ImplDX11_Init(DEVICE.Get(), DC.Get());	// 렌더러 벡엔드 초기화
+	ImGui_ImplWin32_Init(GAME->GetGameDesc().hWnd);	
+	ImGui_ImplDX11_Init(DEVICE.Get(), DC.Get());
 }
 
 void ImGuiManager::Update()
 {
-	ImGui_ImplDX11_NewFrame();	// IMGUI 프레임 단위 초기화 작업
-	ImGui_ImplWin32_NewFrame();	// 윈도우 메세지에서 수집한 입력 데이터를 ImGuiIO 구조체에 반영
-	ImGui::NewFrame(); // ImGui 본체의 새 프레임 시작
+	ImGui_ImplDX11_NewFrame();
+	ImGui_ImplWin32_NewFrame();
+	ImGui::NewFrame();
 }
 
 void ImGuiManager::Render()
 {
 	// Rendering
-	ImGui::Render(); // IMGUI 렌더링 계산
-	ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());	// 계산한 것을 렌더링
+	ImGui::Render();
+	ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());
 }
 
 void ImGuiManager::PostPlayButton()
@@ -141,7 +141,7 @@ bool ImGuiManager::PostPausePanel()
 
 void ImGuiManager::UpdateEditCursorPanel()
 {
-	static shared_ptr<GameObject> go = nullptr; // @@ static 으로 go ptr 을 들고 있는게 껄끄럽지만, 임시로 사용 @@
+	static shared_ptr<GameObject> go = nullptr;
 
 	if (INPUT->GetButtonDown(KEY_TYPE::LBUTTON))
 	{
@@ -295,7 +295,6 @@ void ImGuiManager::PostHierachy()
 		}
 
 		if (ImGui::IsMouseReleased(0) && !ImGui::IsWindowHovered())
-			// ※ IsWindowHovered : 커서가 현재 GUI 위에 위치하는지 확인
 		{
 			selectedIndex = -1;
 			tempIsColliderSelected = false;

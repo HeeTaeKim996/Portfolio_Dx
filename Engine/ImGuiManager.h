@@ -21,9 +21,6 @@ public:
 	void Render();
 
 
-
-
-
 public:
 	void PostPlayButton();
 	bool PostPausePanel();
