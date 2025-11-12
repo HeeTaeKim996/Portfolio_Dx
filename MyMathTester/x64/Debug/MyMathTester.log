@@ -1,0 +1,14 @@
+﻿  TesterPch.cpp
+  MatrixCompare.cpp
+  MyMathTester.cpp
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMathTester\MyMathTester.cpp(492,40): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+  (소스 파일 '/MyMathTester.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMathTester\MyMathTester.cpp(492,30): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+  (소스 파일 '/MyMathTester.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMathTester\MyMathTester.cpp(492,20): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+  (소스 파일 '/MyMathTester.cpp'을(를) 컴파일하는 중)
+  
+  코드를 생성하고 있습니다...
+  MyMathTester.vcxproj -> C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\x64\Debug\MyMathTester.exe

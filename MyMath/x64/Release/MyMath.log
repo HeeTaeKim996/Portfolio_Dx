@@ -1,0 +1,26 @@
+﻿  C:\Users\Heetae\source\repos\Learning_DirectX11\LearningDX11\Learning_DirectX11(3D)\MyMath\assert.h
+  C:\Users\Heetae\source\repos\Learning_DirectX11\LearningDX11\Learning_DirectX11(3D)\MyMath\CoreDefenition.h
+  C:\Users\Heetae\source\repos\Learning_DirectX11\LearningDX11\Learning_DirectX11(3D)\MyMath\correct_math.h
+  C:\Users\Heetae\source\repos\Learning_DirectX11\LearningDX11\Learning_DirectX11(3D)\MyMath\MathUtils.h
+  C:\Users\Heetae\source\repos\Learning_DirectX11\LearningDX11\Learning_DirectX11(3D)\MyMath\myEulerAngles.h
+  C:\Users\Heetae\source\repos\Learning_DirectX11\LearningDX11\Learning_DirectX11(3D)\MyMath\MyMath.h
+  C:\Users\Heetae\source\repos\Learning_DirectX11\LearningDX11\Learning_DirectX11(3D)\MyMath\myMatrix3x3.h
+  C:\Users\Heetae\source\repos\Learning_DirectX11\LearningDX11\Learning_DirectX11(3D)\MyMath\myMatrix4x4.h
+  C:\Users\Heetae\source\repos\Learning_DirectX11\LearningDX11\Learning_DirectX11(3D)\MyMath\myQuaternion.h
+  C:\Users\Heetae\source\repos\Learning_DirectX11\LearningDX11\Learning_DirectX11(3D)\MyMath\myVec3.h
+  C:\Users\Heetae\source\repos\Learning_DirectX11\LearningDX11\Learning_DirectX11(3D)\MyMath\myVec4.h
+  C:\Users\Heetae\source\repos\Learning_DirectX11\LearningDX11\Learning_DirectX11(3D)\MyMath\pch.h
+  C:\Users\Heetae\source\repos\Learning_DirectX11\LearningDX11\Learning_DirectX11(3D)\MyMath\TransformBase.h
+  13개 파일이 복사되었습니다.
+  pch.cpp
+  myEulerAngles.cpp
+  myMatrix3x3.cpp
+  myMatrix4x4.cpp
+  myQuaternion.cpp
+  myVec3.cpp
+C:\Users\Heetae\source\repos\Learning_DirectX11\LearningDX11\Learning_DirectX11(3D)\MyMath\myVec3.cpp(148,25): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/myVec3.cpp'을(를) 컴파일하는 중)
+  
+  myVec4.cpp
+  TransformBase.cpp
+  MyMath.vcxproj -> C:\Users\Heetae\source\repos\Learning_DirectX11\LearningDX11\Learning_DirectX11(3D)\Libraries\Lib\MyMath\Release\MyMath.lib

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScenesData>
+    <Scene>
+        <Name>FirstScene</Name>
+        <GameObjects>
+            <GameObject>
+                <PrefabName>Camera</PrefabName>
+                <Transform>
+                    <Scale X="1" Y="1" Z="1"/>
+                    <Rotation X="0.00059701985" Y="0.67091137" Z="0.0025058824" W="-0.74155062"/>
+                    <Translation X="-21.605139" Y="42.813942" Z="-234.43036"/>
+                </Transform>
+            </GameObject>
+            <GameObject>
+                <PrefabName>Robot</PrefabName>
+                <Transform>
+                    <Scale X="0.1" Y="0.1" Z="0.1"/>
+                    <Rotation X="0" Y="-0.056333251" Z="0" W="0.9984079"/>
+                    <Translation X="103.19473" Y="22.743366" Z="-254.99541"/>
+                </Transform>
+            </GameObject>
+            <GameObject>
+                <PrefabName>Terrain</PrefabName>
+                <Transform>
+                    <Scale X="23.139055" Y="35.601761" Z="31.997343"/>
+                    <Rotation X="0.0086760623" Y="-0.046903413" Z="-0.00040740019" W="0.99886149"/>
+                    <Translation X="-188.87526" Y="12.779367" Z="-525.58966"/>
+                </Transform>
+            </GameObject>
+            <GameObject>
+                <PrefabName>Goomba</PrefabName>
+                <Transform>
+                    <Scale X="0.1" Y="0.1" Z="0.1"/>
+                    <Rotation X="0" Y="-0.99868715" Z="0" W="-0.051207952"/>
+                    <Translation X="202.42435" Y="25.956726" Z="-312.755"/>
+                </Transform>
+            </GameObject>
+            <GameObject>
+                <PrefabName>StaticBox</PrefabName>
+                <Transform>
+                    <Scale X="10" Y="10" Z="10"/>
+                    <Rotation X="0" Y="0" Z="0" W="1"/>
+                    <Translation X="109.93069" Y="22.760111" Z="-280.51309"/>
+                </Transform>
+            </GameObject>
+            <GameObject>
+                <PrefabName>StaticBox</PrefabName>
+                <Transform>
+                    <Scale X="10" Y="10" Z="10"/>
+                    <Rotation X="0" Y="0" Z="0" W="1"/>
+                    <Translation X="109.93069" Y="32.781109" Z="-280.51309"/>
+                </Transform>
+            </GameObject>
+            <GameObject>
+                <PrefabName>StaticBox</PrefabName>
+                <Transform>
+                    <Scale X="10" Y="10" Z="10"/>
+                    <Rotation X="0" Y="0" Z="0" W="1"/>
+                    <Translation X="118.86871" Y="22.631521" Z="-280.51309"/>
+                </Transform>
+            </GameObject>
+            <GameObject>
+                <PrefabName>StaticBox</PrefabName>
+                <Transform>
+                    <Scale X="10" Y="10" Z="10"/>
+                    <Rotation X="0" Y="0" Z="0" W="1"/>
+                    <Translation X="119.31021" Y="32.466579" Z="-280.51309"/>
+                </Transform>
+            </GameObject>
+            <GameObject>
+                <PrefabName>StaticBox</PrefabName>
+                <Transform>
+                    <Scale X="10" Y="10" Z="10"/>
+                    <Rotation X="0" Y="0" Z="0" W="1"/>
+                    <Translation X="109.66312" Y="23.378998" Z="-290.26587"/>
+                </Transform>
+            </GameObject>
+            <GameObject>
+                <PrefabName>StaticBox</PrefabName>
+                <Transform>
+                    <Scale X="10" Y="10" Z="10"/>
+                    <Rotation X="0" Y="0" Z="0" W="1"/>
+                    <Translation X="110.48257" Y="32.798" Z="-290.1438"/>
+                </Transform>
+            </GameObject>
+            <GameObject>
+                <PrefabName>StaticBox</PrefabName>
+                <Transform>
+                    <Scale X="10" Y="10" Z="10"/>
+                    <Rotation X="0" Y="0" Z="0" W="1"/>
+                    <Translation X="119.18199" Y="22.032511" Z="-290.64664"/>
+                </Transform>
+            </GameObject>
+            <GameObject>
+                <PrefabName>StaticBox</PrefabName>
+                <Transform>
+                    <Scale X="10" Y="10" Z="10"/>
+                    <Rotation X="0" Y="0" Z="0" W="1"/>
+                    <Translation X="118.71483" Y="31.544731" Z="-290.64377"/>
+                </Transform>
+            </GameObject>
+            <GameObject>
+                <PrefabName>Goomba</PrefabName>
+                <Transform>
+                    <Scale X="0.1" Y="0.1" Z="0.1"/>
+                    <Rotation X="0" Y="-0.18122032" Z="0" W="0.98344296"/>
+                    <Translation X="222.12193" Y="22.97448" Z="-144.3096"/>
+                </Transform>
+            </GameObject>
+        </GameObjects>
+    </Scene>
+</ScenesData>

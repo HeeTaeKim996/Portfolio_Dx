@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs />
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Libraries\Lib\Engine\00. Global.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Libraries\Lib\Engine\00. Light.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Libraries\Lib\Engine\PortfolioShader.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Libraries\Lib\Engine\18. TweenDemo.cso</FullPath>
+    </ContentFile>
+  </ContentFiles>
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

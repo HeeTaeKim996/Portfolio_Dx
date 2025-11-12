@@ -1,0 +1,107 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: 중간 디렉터리(C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Intermediate\Debug\)에 다른 프로젝트(AssimpTool.vcxproj, Client.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\BaseCollider.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\BoxCollider.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Camera.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\CapsuleCollider.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Collision.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Component.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ConstantBuffer.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Define.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\EnginePch.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ETCUtils.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\FileUtils.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\GameObject.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Geometry.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\GeometryHelper.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Graphics.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\imconfig.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\imgui.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ImGuiManager.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\imgui_impl_dx11.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\imgui_impl_win32.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\imgui_internal.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\imstb_rectpack.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\imstb_textedit.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\imstb_truetype.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\IndexBuffer.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\InitResource.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\InputManager.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\IReturnGameObjects.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\IReturnMonobehaviour.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ITransferShader.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Material.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Mesh.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\MeshRenderer.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Model.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelAnimation.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelAnimator.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelMesh.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelRenderer.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Monobehaviour.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\MyMathUtils.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Pass.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\pch.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Physics.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\PrefabManager.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Renderer.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\RenderManager.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ResourceBase.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ResourceManager.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Rigidbody.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Scene.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\SceneManager.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Shader.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\SimpleMath.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\SphereCollider.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Technique.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Texture.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\TimeManager.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Timer.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\TimerActor.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\TimerManager.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\tinyxml2.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Transform.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Types.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Utils.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\VertexBuffer.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\VertexData.h
+  67개 파일이 복사되었습니다.
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\SimpleMath.inl
+  1개 파일이 복사되었습니다.
+  Game.cpp
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\SceneManager.h(18,25): warning C4227: 오래된 구문을 사용했습니다. 참조의 한정자가 무시됩니다.
+  (소스 파일 '/Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(106,33): warning C4838: 'float'에서 'LONG'(으)로의 변환에는 축소 변환이 필요합니다.
+  (소스 파일 '/Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(106,33): warning C4244: '초기화 중': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(106,46): warning C4838: 'float'에서 'LONG'(으)로의 변환에는 축소 변환이 필요합니다.
+  (소스 파일 '/Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(106,46): warning C4244: '초기화 중': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(711,42): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(715,42): warning C4244: '-=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(719,42): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(723,42): warning C4244: '-=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(727,42): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(731,42): warning C4244: '-=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/Game.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(138,1): warning C4715: 'Game::WndProc': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  Engine.vcxproj -> C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Libraries\Lib\Engine\Engine.lib

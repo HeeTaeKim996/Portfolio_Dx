@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{6c70560b-1e9b-42bd-9d67-ef136afcb358}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Basis">
+      <UniqueIdentifier>{1f875376-c253-4c78-b10f-5e6d09490c9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure">
+      <UniqueIdentifier>{8faadc55-bc73-4b32-8940-cee5f05b1539}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Basis\ColliderBase">
+      <UniqueIdentifier>{1ea0da15-cb61-4602-b4ad-9f82cd9c5480}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="myEulerAngles.cpp">
+      <Filter>Basis</Filter>
+    </ClCompile>
+    <ClCompile Include="myMatrix3x3.cpp">
+      <Filter>Basis</Filter>
+    </ClCompile>
+    <ClCompile Include="myMatrix4x4.cpp">
+      <Filter>Basis</Filter>
+    </ClCompile>
+    <ClCompile Include="myQuaternion.cpp">
+      <Filter>Basis</Filter>
+    </ClCompile>
+    <ClCompile Include="myVec3.cpp">
+      <Filter>Basis</Filter>
+    </ClCompile>
+    <ClCompile Include="myVec4.cpp">
+      <Filter>Basis</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformBase.cpp" />
+    <ClCompile Include="CircularDoublyLinkedList.cpp" />
+    <ClCompile Include="myBoundingSphere.cpp">
+      <Filter>Basis\ColliderBase</Filter>
+    </ClCompile>
+    <ClCompile Include="myBoundingOrientedBox.cpp">
+      <Filter>Basis\ColliderBase</Filter>
+    </ClCompile>
+    <ClCompile Include="myRay.cpp">
+      <Filter>Basis\ColliderBase</Filter>
+    </ClCompile>
+    <ClCompile Include="myBoundingCapsule.cpp">
+      <Filter>Basis\ColliderBase</Filter>
+    </ClCompile>
+    <ClCompile Include="ContactInfo.cpp">
+      <Filter>Basis\ColliderBase</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="assert.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="correct_math.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="MathUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreDefenition.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="myEulerAngles.h">
+      <Filter>Basis</Filter>
+    </ClInclude>
+    <ClInclude Include="myMatrix3x3.h">
+      <Filter>Basis</Filter>
+    </ClInclude>
+    <ClInclude Include="myMatrix4x4.h">
+      <Filter>Basis</Filter>
+    </ClInclude>
+    <ClInclude Include="myQuaternion.h">
+      <Filter>Basis</Filter>
+    </ClInclude>
+    <ClInclude Include="myVec3.h">
+      <Filter>Basis</Filter>
+    </ClInclude>
+    <ClInclude Include="myVec4.h">
+      <Filter>Basis</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformBase.h" />
+    <ClInclude Include="MyMath.h" />
+    <ClInclude Include="CircularDoublyLinkedList.h" />
+    <ClInclude Include="myBoundingSphere.h">
+      <Filter>Basis\ColliderBase</Filter>
+    </ClInclude>
+    <ClInclude Include="myBoundingOrientedBox.h">
+      <Filter>Basis\ColliderBase</Filter>
+    </ClInclude>
+    <ClInclude Include="myRay.h">
+      <Filter>Basis\ColliderBase</Filter>
+    </ClInclude>
+    <ClInclude Include="myBoundingCapsule.h">
+      <Filter>Basis\ColliderBase</Filter>
+    </ClInclude>
+    <ClInclude Include="ContactInfo.h">
+      <Filter>Basis\ColliderBase</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

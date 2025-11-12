@@ -1,0 +1,42 @@
+﻿  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\assert.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\CircularDoublyLinkedList.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\ContactInfo.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\CoreDefenition.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\correct_math.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\MathUtils.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\myBoundingCapsule.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\myBoundingOrientedBox.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\myBoundingSphere.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\myEulerAngles.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\MyMath.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\myMatrix3x3.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\myMatrix4x4.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\myQuaternion.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\myRay.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\myVec3.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\myVec4.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\pch.h
+  C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\TransformBase.h
+  19개 파일이 복사되었습니다.
+  pch.cpp
+  CircularDoublyLinkedList.cpp
+  ContactInfo.cpp
+  myBoundingOrientedBox.cpp
+  myBoundingSphere.cpp
+  myBoundingCapsule.cpp
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\myBoundingOrientedBox.cpp(337,25): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/myBoundingOrientedBox.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\myBoundingOrientedBox.cpp(337,46): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/myBoundingOrientedBox.cpp'을(를) 컴파일하는 중)
+  
+  myEulerAngles.cpp
+  myMatrix3x3.cpp
+  myMatrix4x4.cpp
+  myQuaternion.cpp
+  myRay.cpp
+  myVec3.cpp
+  myVec4.cpp
+  TransformBase.cpp
+  코드를 생성하고 있습니다...
+  MyMath.vcxproj -> C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Libraries\Lib\MyMath\Debug\MyMath.lib

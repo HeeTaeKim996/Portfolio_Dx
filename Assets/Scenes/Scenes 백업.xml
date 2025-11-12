@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScenesData>
+    <Scene>
+        <Name>FirstScene</Name>
+        <GameObjects>
+            <GameObject>
+                <PrefabName>Camera</PrefabName>
+                <Transform>
+                    <Scale X="1" Y="1" Z="1"/>
+                    <Rotation X="-0.11829427" Y="0.33999211" Z="-0.0086241132" W="0.93291682"/>
+                    <Translation X="216.24982" Y="23.006725" Z="-392.51849"/>
+                </Transform>
+            </GameObject>
+            <GameObject>
+                <PrefabName>Robot</PrefabName>
+                <Transform>
+                    <Scale X="0.1" Y="0.1" Z="0.1"/>
+                    <Rotation X="0" Y="0.99882823" Z="0" W="0.04832571"/>
+                    <Translation X="159.94162" Y="22.743366" Z="-271.18832"/>
+                </Transform>
+            </GameObject>
+            <GameObject>
+                <PrefabName>Kachujin_OnlyModel</PrefabName>
+                <Transform>
+                    <Scale X="0.1" Y="0.1" Z="0.1"/>
+                    <Rotation X="0" Y="0" Z="0" W="1"/>
+                    <Translation X="130.89658" Y="14.229399" Z="-280.95859"/>
+                </Transform>
+            </GameObject>
+            <GameObject>
+                <PrefabName>Terrain</PrefabName>
+                <Transform>
+                    <Scale X="40" Y="40" Z="40"/>
+                    <Rotation X="0" Y="0" Z="0" W="1"/>
+                    <Translation X="64.43161" Y="0" Z="-323.77319"/>
+                </Transform>
+            </GameObject>
+            <GameObject>
+                <PrefabName>Goomba</PrefabName>
+                <Transform>
+                    <Scale X="0.1" Y="0.1" Z="0.1"/>
+                    <Rotation X="0" Y="0" Z="0" W="1"/>
+                    <Translation X="154.43924" Y="18.191761" Z="-300.03143"/>
+                </Transform>
+            </GameObject>
+        </GameObjects>
+    </Scene>
+</ScenesData>

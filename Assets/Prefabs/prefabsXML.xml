@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prefabs>
+    <GameObject>
+        <ObjectInfo Name="Camera"/>
+        <FixedComponents>
+            <Transform>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0" W="1"/>
+                <Translation X="0" Y="0" Z="-44.444401"/>
+            </Transform>
+            <Camera>
+                <CameraValues Near="1" Far="1000" FOV="0.78539819"/>
+            </Camera>
+        </FixedComponents>
+        <Monobehaviours>
+            <Monobehaviour>
+                <ClassName>CameraScript</ClassName>
+            </Monobehaviour>
+        </Monobehaviours>
+        <ChildrenObjects/>
+    </GameObject>
+    <GameObject>
+        <ObjectInfo Name="Kachujin_OnlyModel"/>
+        <FixedComponents>
+            <Transform>
+                <Scale X="0.1" Y="0.1" Z="0.1"/>
+                <Rotation X="0" Y="0" Z="0" W="1"/>
+                <Translation X="0" Y="0" Z="20"/>
+            </Transform>
+            <ModelRenderer Pass="0">
+                <Name>Kachujin</Name>
+            </ModelRenderer>
+        </FixedComponents>
+        <Monobehaviours>
+            <Monobehaviour>
+                <ClassName>Kachujin</ClassName>
+            </Monobehaviour>
+        </Monobehaviours>
+        <ChildrenObjects/>
+    </GameObject>
+    <GameObject>
+        <ObjectInfo Name="Kachujin_Animation"/>
+        <FixedComponents>
+            <Transform>
+                <Scale X="0.1" Y="0.1" Z="0.1"/>
+                <Rotation X="0" Y="0" Z="0" W="1"/>
+                <Translation X="-20" Y="0" Z="20"/>
+            </Transform>
+            <ModelAnimator Pass="0">
+                <Name>Kachujin</Name>
+            </ModelAnimator>
+        </FixedComponents>
+        <Monobehaviours>
+            <Monobehaviour>
+                <ClassName>Kachujin</ClassName>
+            </Monobehaviour>
+        </Monobehaviours>
+        <ChildrenObjects/>
+    </GameObject>
+    <GameObject>
+        <ObjectInfo Name="Sun"/>
+        <FixedComponents>
+            <Transform>
+                <Scale X="5" Y="5" Z="5"/>
+                <Rotation X="0" Y="0" Z="0" W="1"/>
+                <Translation X="15" Y="0" Z="0"/>
+            </Transform>
+            <MeshRenderer>
+                <Mesh>
+                    <Name>Sphere</Name>
+                </Mesh>
+                <Material>
+                    <Name>Leather</Name>
+                </Material>
+            </MeshRenderer>
+        </FixedComponents>
+        <Monobehaviours>
+            <Monobehaviour>
+                <ClassName>TempRotator</ClassName>
+            </Monobehaviour>
+        </Monobehaviours>
+        <ChildrenObjects>
+            <GameObject>
+                <ObjectInfo Name="Earth"/>
+                <FixedComponents>
+                    <Transform>
+                        <Scale X="5" Y="5" Z="5"/>
+                        <Rotation X="0" Y="0" Z="0" W="1"/>
+                        <Translation X="-10" Y="0" Z="0"/>
+                    </Transform>
+                    <MeshRenderer>
+                        <Mesh>
+                            <Name>Sphere</Name>
+                        </Mesh>
+                        <Material>
+                            <Name>Leather</Name>
+                        </Material>
+                    </MeshRenderer>
+                </FixedComponents>
+                <Monobehaviours>
+                    <Monobehaviour>
+                        <ClassName>TempRotator</ClassName>
+                    </Monobehaviour>
+                </Monobehaviours>
+                <ChildrenObjects>
+                    <GameObject>
+                        <ObjectInfo Name="Moon"/>
+                        <FixedComponents>
+                            <Transform>
+                                <Scale X="5" Y="5" Z="5"/>
+                                <Rotation X="0" Y="0" Z="0" W="1"/>
+                                <Translation X="-35" Y="0" Z="0"/>
+                            </Transform>
+                            <MeshRenderer>
+                                <Mesh>
+                                    <Name>Sphere</Name>
+                                </Mesh>
+                                <Material>
+                                    <Name>Leather</Name>
+                                </Material>
+                            </MeshRenderer>
+                        </FixedComponents>
+                        <Monobehaviours>
+                            <Monobehaviour>
+                                <ClassName>TempRotator</ClassName>
+                            </Monobehaviour>
+                        </Monobehaviours>
+                        <ChildrenObjects/>
+                    </GameObject>
+                </ChildrenObjects>
+            </GameObject>
+        </ChildrenObjects>
+    </GameObject>
+</Prefabs>

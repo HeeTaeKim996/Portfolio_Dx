@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{7efaf247-0110-432a-9d3a-fb863c368ac6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Scripts">
+      <UniqueIdentifier>{6eb89018-94d6-4519-b636-4a15a2410096}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Scripts\Player">
+      <UniqueIdentifier>{3ff1222c-6941-4f4c-bb62-f1dc6e990f27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Scripts\Utils">
+      <UniqueIdentifier>{37683b95-2c15-4613-8483-fc5ac48e083f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Scripts\Goomba">
+      <UniqueIdentifier>{d67c1729-0e95-407a-b3a8-69dcf4e0929d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Kachujin.cpp">
+      <Filter>Main\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraScript.cpp">
+      <Filter>Main\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="TempRotator.cpp">
+      <Filter>Main\Scripts</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceInitializer2.cpp" />
+    <ClCompile Include="MonobehaviourLoader.cpp" />
+    <ClCompile Include="PrefabInitializer.cpp" />
+    <ClCompile Include="SceneCodeLoader.cpp" />
+    <ClCompile Include="PlayerMovement.cpp">
+      <Filter>Main\Scripts\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerController.cpp">
+      <Filter>Main\Scripts\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationHelper.cpp">
+      <Filter>Main\Scripts\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Goomba.cpp">
+      <Filter>Main\Scripts\Goomba</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Kachujin.h">
+      <Filter>Main\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraScript.h">
+      <Filter>Main\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="TempRotator.h">
+      <Filter>Main\Scripts</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceInitializer2.h" />
+    <ClInclude Include="MonobehaviourLoader.h" />
+    <ClInclude Include="PrefabInitializer.h" />
+    <ClInclude Include="SceneCodeLoader.h" />
+    <ClInclude Include="PlayerMovement.h">
+      <Filter>Main\Scripts\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerController.h">
+      <Filter>Main\Scripts\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationHelper.h">
+      <Filter>Main\Scripts\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Goomba.h">
+      <Filter>Main\Scripts\Goomba</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
