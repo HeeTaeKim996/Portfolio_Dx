@@ -134,5 +134,3 @@ myVec3 myBoundingSphere::LosestPoint() const
 {
 	return myVec3(center.X, center.Y - radius, center.Z);
 }
-
-

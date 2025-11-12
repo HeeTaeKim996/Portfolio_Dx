@@ -30,4 +30,3 @@ public:
 	myVec3 center;
 	float radius;
 };
-

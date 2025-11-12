@@ -6,12 +6,10 @@ class myMatrix4x4;
 class myVec4
 {
 public:
-	// 생성자
 	myVec4() : X(0.f), Y(0.f), Z(0.f), W(0.f) {}
 	myVec4(float InX, float InY, float InZ, float InW) : X(InX), Y(InY), Z(InZ), W(InW) {}
 	myVec4(myVec3 InVec3, float InW);
 
-	// 연산자
 	float& operator[](BYTE index) { assert(index < 4); return (&X)[index]; }
 	const float& operator[](BYTE index) const { assert(index < 4); return (&X)[index]; }
 
@@ -31,7 +29,6 @@ public:
 	bool operator==(const myVec4& InVector) const;
 	bool operator!=(const myVec4& InVector) const;
 
-	// 멤버함수
 	float Size() const;
 	float SizeSquared() const;
 	void Normalize();
@@ -49,7 +46,6 @@ public:
 
 
 public:
-	// 멤버
 	float X, Y, Z, W;
 };
 

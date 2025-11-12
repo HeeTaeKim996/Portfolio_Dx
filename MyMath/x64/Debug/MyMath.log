@@ -17,19 +17,15 @@
   C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\myVec4.h
   C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\pch.h
   C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\TransformBase.h
-  19개 파일이 복사되었습니다.
+  19 File(s) copied
   pch.cpp
   CircularDoublyLinkedList.cpp
   ContactInfo.cpp
   myBoundingOrientedBox.cpp
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\myBoundingOrientedBox.cpp(334,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\myBoundingOrientedBox.cpp(334,46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   myBoundingSphere.cpp
   myBoundingCapsule.cpp
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\myBoundingOrientedBox.cpp(337,25): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/myBoundingOrientedBox.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\myBoundingOrientedBox.cpp(337,46): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/myBoundingOrientedBox.cpp'을(를) 컴파일하는 중)
-  
   myEulerAngles.cpp
   myMatrix3x3.cpp
   myMatrix4x4.cpp
@@ -38,5 +34,5 @@ C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\MyMath\myBoundingOri
   myVec3.cpp
   myVec4.cpp
   TransformBase.cpp
-  코드를 생성하고 있습니다...
+  Generating Code...
   MyMath.vcxproj -> C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Libraries\Lib\MyMath\Debug\MyMath.lib

@@ -10,7 +10,6 @@
 bool myBoundingCapsule::Intersects(const myRay& ray, float& distance) const
 {
 	myVec3 p0 = ray.origin + ray.dir * radius; 
-	// 반지름 만큼 앞쪽을 start로 하여, ray 시작점 뒤쪽에, radius 내에 위치한 콜라이더는 감지 안되도록
 	myVec3 p1 = ray.origin + ray.dir * ray.magnitude;
 
 
@@ -73,7 +72,7 @@ bool myBoundingCapsule::Intersects(const myBoundingOrientedBox& otherObb, Contac
 	myVec3 aClosest = myVec3::ClosestPoint(bottom, top, otherObb.center);
 	myVec3 bClosest = otherObb.ClosestPoint(aClosest);
 	
-	aClosest = myVec3::ClosestPoint(bottom, top, bClosest); // 이렇게 한번 더 할지는, 엔진마다 상이하다 함 (반반이라 함)
+	aClosest = myVec3::ClosestPoint(bottom, top, bClosest);
 
 	myVec3 diff = (aClosest - bClosest);
 	float sizeSquared = diff.SizeSquared();

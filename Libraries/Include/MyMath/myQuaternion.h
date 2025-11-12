@@ -8,7 +8,6 @@ class myEulerAngles;
 class myQuaternion
 {
 public:
-	// 积己磊
 	myQuaternion();
 	myQuaternion(float InX, float InY, float InZ, float InW) : X(InX), Y(InY), Z(InZ), W(InW) {}
 	myQuaternion(const myVec3& axis, float degree);
@@ -17,7 +16,6 @@ public:
 	myQuaternion(const myMatrix3x3& InMatrix);
 
 
-	// 积己
 	void FromAxisAngle(const myVec3& InAxis, float inAngleDegree);
 	void FromEulerAngles(const myEulerAngles& InEulerAngles);
 	void FromMatrix(const myMatrix3x3& InMatrix);
@@ -25,7 +23,6 @@ public:
 
 
 
-	// 窃荐
 	myQuaternion operator-() const;
 	myQuaternion operator*(const myQuaternion& InQuaternion) const;
 	myQuaternion operator*=(const myQuaternion& InQuaternion);
@@ -58,4 +55,3 @@ public:
 	float Z;
 	float W;
 };
-

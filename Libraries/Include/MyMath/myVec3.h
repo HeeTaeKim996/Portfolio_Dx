@@ -6,12 +6,9 @@ class myVec4;
 class myVec3
 {
 public:
-	/* 생성자 */
 	myVec3() : X(0.f), Y(0.f), Z(0.f) {}
 	myVec3(float InX, float InY, float InZ) : X(InX), Y(InY), Z(InZ) {}
 
-
-	// 연산자
 	float& operator[](BYTE InIndex) { assert(InIndex < 3); return (&X)[InIndex]; }
 	const float& operator[](BYTE InIndex) const { assert(InIndex < 3); return (&X)[InIndex]; }
 
@@ -33,8 +30,6 @@ public:
 	myVec3 operator*(const myVec3& InVector) const;
 	myVec3 operator/(const myVec3& InVector) const;
 	
-
-	// 멤버함수
 	float Size() const;
 	float SizeSquared() const;
 	void Normalize();
@@ -60,10 +55,8 @@ public:
 	const static myVec3 Zero;
 
 	
-public:	
-	// 멤버
+public:
 	float X, Y, Z;
 
 	
 };
-

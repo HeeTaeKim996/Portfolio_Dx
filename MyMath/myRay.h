@@ -22,4 +22,3 @@ public:
 	myVec3 dir;
 	float magnitude;
 };
-

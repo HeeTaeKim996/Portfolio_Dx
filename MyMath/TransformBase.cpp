@@ -30,11 +30,8 @@ TransformBase::TransformBase(const myMatrix4x4& InMatrix)
 {
 	_position = InMatrix[3].ToVec3();
 
-	// 스케일 회전 행렬만 분리
 	myMatrix3x3 scaleRotMatrix(InMatrix[0].ToVec3(), InMatrix[1].ToVec3(), InMatrix[2].ToVec3());
 
-
-	// 스케일 구하기
 	const float squareSumX = scaleRotMatrix[0].SizeSquared();
 	const float squareSumY = scaleRotMatrix[1].SizeSquared();
 	const float squareSumZ = scaleRotMatrix[2].SizeSquared();
@@ -47,7 +44,6 @@ TransformBase::TransformBase(const myMatrix4x4& InMatrix)
 	scaleRotMatrix[1] /= _scale.Y;
 	scaleRotMatrix[2] /= _scale.Z;
 
-	// 사원수로 변환
 	_rotation = myQuaternion(scaleRotMatrix);
 }
 
@@ -57,7 +53,7 @@ TransformBase::TransformBase(const myMatrix4x4& InMatrix)
 //#define THIS_IS_NOT_QUATERNION_ROTATION_THIS_IS_SAME_AS_MATRIX_ROTATION
 void TransformBase::AddYawRotation(float InDegree)
 {
-#ifdef THIS_IS_NOT_QUATERNION_ROTATION_THIS_IS_SAME_AS_MATRIX_ROTATION // 기존 강의 코드인데 왜 이렇게 했던 걸까
+#ifdef THIS_IS_NOT_QUATERNION_ROTATION_THIS_IS_SAME_AS_MATRIX_ROTATION 
 	myEulerAngles r = _rotation.ToEulerAngles();
 	r.Yaw += InDegree;
 	r.Clamp();
@@ -151,9 +147,6 @@ TransformBase TransformBase::LocalToWorld(const TransformBase& InParentWorldTran
 	ret.SetScale(InParentWorldTransform.GetScale() * GetScale());
 
 	ret.SetRotation(GetRotation() * InParentWorldTransform.GetRotation());
-	/*	- 주의. 현재 LH 이므로, q2* q1* v q1 q2 이므로, 로테이션을 사원수로 연산할 때, 기존 q1이 좌측, 새로운 q2가 우측
-		- 기존 강의의 경우, RH로 작성됐으므로, q2 q1 v q1* q2* 이므로, 강의 코드에서는 기존 q1가 우측, 새로운 q2가 좌측 */
-
 
 	ret.SetPosition(
 		InParentWorldTransform.GetPosition()
@@ -171,19 +164,10 @@ TransformBase TransformBase::WorldToLocal(const TransformBase& InParentWorldTran
 	ret.SetScale(GetScale() * invParent.GetScale());
 
 	ret.SetRotation(GetRotation() * invParent.GetRotation());
-	/*	- 주의. 현재 LH 이므로, q2* q1* v q1 q2 이므로, 로테이션을 사원수로 연산할 때, 기존 q1이 좌측, 새로운 q2가 우측
-		- 기존 강의의 경우, RH로 작성됐으므로, q2 q1 v q1* q2* 이므로, 강의 코드에서는 기존 q1가 우측, 새로운 q2가 좌측 */
-
 	ret.SetPosition(
 		invParent.GetPosition()
 		+ (invParent.GetRotation() * GetPosition()) * invParent.GetScale()
 	);
-	/*	- 강의 원본 코드에는, posW 를 scaleP 부터 처리후에, rotP 를 처리함.
-		- 로컬 -> 월드를 posL 에 scaleP 를 하고, rotP 를 했으니, 월드 -> 로컬에서는 역순으로 해야 구할 수 있는 건데,
-		  강의 코드에 오류가 있는 건지, 내가 이해를 잘 못했던건지.. 모르겠다.
-		- 돌려보니 잘 작동한다. 강의 코드가 오류인듯
-	*/
-
 
 	return ret;
 }
@@ -193,5 +177,4 @@ myVec3 TransformBase::WorldToLocalPos(const myVec3& InWorldVector) const
 	TransformBase ownsInverse = Inverse();
 
 	return ownsInverse.GetPosition() + ((ownsInverse.GetRotation() * InWorldVector) * ownsInverse.GetScale());
-	// 마찬가지로 잘 작동한다. 강의 코드가 오류인듯
 }

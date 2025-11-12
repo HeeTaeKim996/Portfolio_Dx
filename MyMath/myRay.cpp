@@ -77,5 +77,4 @@ bool myRay::Intersect(const myVec3& minAABB, const myVec3& maxAABB, float& dista
 	distance = tMin >= 0 ? tMin : tMax;
 
 	return distance >= 0 && distance <= magnitude;
-
 }

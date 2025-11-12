@@ -11,7 +11,6 @@ class myEulerAngles;
 class TransformBase
 {
 public:
-	// »ý¼ºÀÚ
 	TransformBase();
 	TransformBase(const myVec3& InPosition);
 	TransformBase(const myVec3& InPosition, const myQuaternion& InRotation);
@@ -20,7 +19,6 @@ public:
 
 
 public:
-	// Æ®·£½ºÆû ¼³Á¤ ÇÔ¼ö
 	void SetPosition(const myVec3& InPosition) { _position = InPosition; }
 	void AddPosition(const myVec3& InDeltaPosition) { _position += InDeltaPosition; }
 
@@ -49,7 +47,6 @@ public:
 	myQuaternion GetRotation() const { return _rotation; }
 	myVec3 GetScale() const { return _scale; }
 
-	// Æ®·»½ºÆû º¯È¯
 	TransformBase Inverse() const;
 	TransformBase LocalToWorld(const TransformBase& InParentWorldTransform) const;
 	TransformBase WorldToLocal(const TransformBase& InParentWorldTransform) const;
@@ -57,7 +54,6 @@ public:
 
 
 private:
-	// ¸â¹ö
 	myVec3 _position;
 	myQuaternion _rotation;
 	myVec3 _scale;

@@ -61,7 +61,7 @@ void myQuaternion::FromEulerAngles(const myEulerAngles& InEulerAngles)
 	Y = cp * cr * sy + cy * sp * sr;
 	Z = cy * cp * sr + cr * sy * sp;
 #else
-	assert(0); // 플래그 최소 1개 필요
+	assert(0); // 占시뤄옙占쏙옙 占쌍쇽옙 1占쏙옙 占십울옙
 #endif
 }
 
@@ -79,7 +79,6 @@ void myQuaternion::FromMatrix(const myMatrix3x3& InMatrix)
 	//}
 
 	const float eps = 1e-4f; 
-	// ※ SMALL_NUMBER(1e-6f)로 하니, 타이트해서 오차 못잡고 리턴때리는 경우가 생겨서, 좀 더 느슨하게 1e-4f 로 처리
 
 	if (!Math::EqualsInTolerance(InMatrix[0].SizeSquared(), 1.f, eps) ||
 		!Math::EqualsInTolerance(InMatrix[1].SizeSquared(), 1.f, eps) ||
@@ -91,7 +90,6 @@ void myQuaternion::FromMatrix(const myMatrix3x3& InMatrix)
 
 	if (trace > 0.f)
 	{
-		// W 요소를 구하고, 나머지 요소 계산
 		root = sqrtf(trace + 1.f);
 		W = 0.5f * root;
 		root = 0.5f / root;
@@ -104,17 +102,14 @@ void myQuaternion::FromMatrix(const myMatrix3x3& InMatrix)
 	{
 		BYTE i = 0;
 
-		// X, Y, Z 중 가장 큰 요소를 파악
 		if (InMatrix[1][1] > InMatrix[0][0]) i = 1;
 		if (InMatrix[2][2] > InMatrix[1][1]) i = 2;
 
 
-		// i, j, k 의 순서 저장
 		static const BYTE next[3] = { 1, 2, 0 };
 		BYTE j = next[i];
 		BYTE k = next[j];
 
-		// 가장 큰 요소의 값 구하기
 		root = sqrtf(InMatrix[i][i] - InMatrix[j][j] - InMatrix[k][k] + 1.f);
 
 		float* qt[3] = { &X, &Y, &Z };
@@ -122,11 +117,9 @@ void myQuaternion::FromMatrix(const myMatrix3x3& InMatrix)
 
 		root = 0.5f / root;
 
-		// 나머지 두 요소의 값 구하기
 		*qt[j] = (InMatrix[j][i] + InMatrix[i][j]) * root;
 		*qt[k] = (InMatrix[k][i] + InMatrix[i][k]) * root;
 
-		// 마지막 W값 구하기
 		W = (InMatrix[k][j] - InMatrix[j][k]) * root;
 	}
 }
@@ -135,10 +128,8 @@ void myQuaternion::FromLookingVector(const myVec3& lookingVector, const myVec3& 
 {
 	myVec3 localX, localY, localZ;
 
-	// 단위 Z축 생성
 	localZ = lookingVector.GetNormalize();
 	
-	// 시선 방향과 월드 Y축이 평행한 경우
 	if (Math::Abs(localZ.Y) >= (1.f - SMALL_NUMBER))
 	{
 		localX = myVec3::UnitX;
@@ -147,8 +138,7 @@ void myQuaternion::FromLookingVector(const myVec3& lookingVector, const myVec3& 
 	{
 		localX = upVector.Cross(localZ).GetNormalize();
 	}
-	localY = localZ.Cross(localX).GetNormalize(); 
-	// ※ 이론적으로는 localY 에서는 GetNormalize 가 필요 없지만, 컴퓨터 연산에서 오차가 생길 수 있기에, GetNormalize 처리
+	localY = localZ.Cross(localX).GetNormalize();
 
 	FromMatrix(myMatrix3x3(localX, localY, localZ));
 }
@@ -203,26 +193,17 @@ bool myQuaternion::operator==(const myQuaternion& InQuaternion) const
 myQuaternion myQuaternion::Slerp(const myQuaternion& startQuaternion, myQuaternion endQuaternion,
 	float InRatio)
 {
-	// 사원수의 내적 구하기
 	float dot = startQuaternion.X * endQuaternion.X + startQuaternion.Y * endQuaternion.Y
 		+ startQuaternion.Z * endQuaternion.Z + startQuaternion.W * endQuaternion.W;
 
-	/* 내적 값이 0보다 작으면 최단거리는 사용하도록 방향을 전환(q v q* 이기 때문에 2배..예상이므로, 
-	   cos(세타)가 음수이면 반대방향이 더 빠름*/
 	if (dot < 0.0f)
 	{
 		endQuaternion = -endQuaternion;
 		dot = -dot;
-
-		/* ※	기존 교재의 코드는 startQuaternion을 반전시키는 것이었다.내가 이해하기로는 수리적으로 startQuaternion을
-				반전시켜도 문제가 없다고 생각했지만, 지피티는 startQuaternion이 아닌 endQuaternon을 반전시켜야, 
-				t 의 경계값이 깨지지 않는다고 한다. 이부분을 이해하지는 못해서, 여전히 startQuaternion을 반전시켰을 때의
-				문제점을 이해하지는 못했지만, 지피티가 강조하니.. startQuaternion이 아닌, endQuaternion을 반전시켰다.
-		*/ 
 	}
 
 	float alpha = 1.f, beta = 0.f;
-	if (dot > 0.9995f) // 두사원수의 사잇각이 작으면, 선형보간 수행
+	if (dot > 0.9995f)
 	{
 		alpha = 1.0f - InRatio;
 		beta = InRatio;
@@ -309,9 +290,9 @@ myEulerAngles myQuaternion::ToEulerAngles() const
 
 	return retEuler;
 #elif defined(ROLL_PITCH_YAW)
-	assert(0); // W X Y Z 순으로 - - + + 일때의 euler->quat 을 기반으로 한 공식 도출이 필요한데, 아직 안구함..
+	assert(0); // W X Y Z 占쏙옙占쏙옙占쏙옙 - - + + 占싹띰옙占쏙옙 euler->quat 占쏙옙 占쏙옙占쏙옙占쏙옙占� 占쏙옙 占쏙옙占쏙옙 占쏙옙占쏙옙占쏙옙 占십울옙占싼듸옙, 占쏙옙占쏙옙 占싫깍옙占쏙옙..
 #else
-	assert(0); // 플래그 최소 1개 필요
+	assert(0); // 占시뤄옙占쏙옙 占쌍쇽옙 1占쏙옙 占십울옙
 #endif
 }
 

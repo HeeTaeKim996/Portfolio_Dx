@@ -46,9 +46,6 @@ bool myBoundingOrientedBox::Intersects(const myRay& ray, float& distance) const
 	distance = (tMin >= 0) ? tMin : tMax;
 
 	return distance >= 0 && distance <= ray.magnitude;
-	// ※ 거리가 rayClosest - rayOrigin 처럼, 레이 기준 거리를 산출해야 하는데, distnace 는 축별 길이 중 최대 최소이니 문제가 될테지만,
-	//   우선 넘어감
-
 }
 
 #if 0 // Obsolate
@@ -110,7 +107,7 @@ void myBoundingOrientedBox::ComputeAABB(myVec3& min, myVec3& max) const
 	max = center + r;
 }
 
-#if 0 // peneDepth 구하는 부분 오류
+#if 0
 bool myBoundingOrientedBox::Intersects_OBB(const myBoundingOrientedBox& b, float& peneDepth)
 {
 	const float EPS = 1e-6f;
@@ -127,7 +124,7 @@ bool myBoundingOrientedBox::Intersects_OBB(const myBoundingOrientedBox& b, float
 		for (int j = 0; j < 3; j++)
 		{
 			dots[i][j] = axes[i].Dot(b.axes[j]);
-			absDots[i][j] = fabs(dots[i][j]) + EPS /* EPS : 안정성용 */;
+			absDots[i][j] = fabs(dots[i][j]) + EPS /* EPS : 占쏙옙占쏙옙占쏙옙占쏙옙 */;
 		}
 	}
 
@@ -173,7 +170,7 @@ bool myBoundingOrientedBox::Intersects_OBB(const myBoundingOrientedBox& b, float
 
 	return true;
 }
-#elif 1 // penetratio 이 예쌍보다 높게 계산됨.. 원인은 모름
+#elif 1 
 bool myBoundingOrientedBox::Intersects_OBB(const myBoundingOrientedBox& b, ContactInfo& contactInfo) const
 {
 	myVec3 dir = (b.center - center);
@@ -259,7 +256,7 @@ bool myBoundingOrientedBox::Intersects(const myBoundingCapsule& capsule, Contact
 	myVec3 capsuleClosest = myVec3::ClosestPoint(capsule.bottom, capsule.top, center);
 	myVec3 obbClosest = ClosestPoint(capsuleClosest);
 
-	capsuleClosest = myVec3::ClosestPoint(capsule.bottom, capsule.top, obbClosest); // 이렇게 한번 더 할지는, 엔진마다 상이하다 함 (반반이라 함)
+	capsuleClosest = myVec3::ClosestPoint(capsule.bottom, capsule.top, obbClosest);
 
 	myVec3 diff = (obbClosest - capsuleClosest);
 	float sizeSquared = diff.SizeSquared();
@@ -341,4 +338,3 @@ myVec3 myBoundingOrientedBox::LowestPoint() const
 
 	return lowest;
 }
-
