@@ -201,8 +201,6 @@ void Scene::EditRender()
 
 void Scene::AddGameObject(shared_ptr<GameObject> gameObject)
 {
-
-
 	if (!_freeIndexList.empty())
 	{
 		uint32 id = _freeIndexList.back();
@@ -215,10 +213,7 @@ void Scene::AddGameObject(shared_ptr<GameObject> gameObject)
 		gameObject->SetId(id);
 
 		string prefabName = gameObject->GetName();
-
-
 		gameObject->SetName(prefabName + "_" + std::to_string(useCount) + "_" + std::to_string(index));
-
 
 		_gameObjects[index] = gameObject;
 	}
@@ -228,22 +223,16 @@ void Scene::AddGameObject(shared_ptr<GameObject> gameObject)
 		{
 			_gameObjects.resize(_gameObjects.size() + 10);
 		}
-
 		assert(_gameObjectAddingIndex <= (1 << 24));
 
 
-		uint32 id = _gameObjectAddingIndex;
+		uint32 id = _gameObjectAddingIndex++;
 		gameObject->SetId(id);
-
 
 		string prefabName = gameObject->GetName();
 		gameObject->SetName(prefabName + "_" + std::to_string(0) + "_" + std::to_string(id));
 		
-
 		_gameObjects[id] = gameObject;
-
-
-		_gameObjectAddingIndex++;
 	}
 
 	gameObject->SetScene(shared_from_this());

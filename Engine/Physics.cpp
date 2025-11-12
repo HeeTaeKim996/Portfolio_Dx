@@ -809,7 +809,6 @@ vector<::pair<BaseCollider*, ContactInfo>> Physics::Sphere(const myVec3& center,
 }
 
 
-
 bool Physics::UpdateRigidbody(shared_ptr<Rigidbody> rigidbody)
 {
 	Vec3 velocity = rigidbody->velocity;

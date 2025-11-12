@@ -71,4 +71,3 @@ public:
 private:
 	bool UpdateRigidbody(shared_ptr<Rigidbody> rigidbody);
 };
-

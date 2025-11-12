@@ -69,30 +69,5 @@
   67 File(s) copied
   C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\SimpleMath.inl
   1 File(s) copied
-  BaseCollider.cpp
-  BoxCollider.cpp
-  CapsuleCollider.cpp
-  Game.cpp
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\SceneManager.h(18,48): warning C4227: anachronism used: qualifiers on reference are ignored
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(103,33): warning C4838: conversion from 'float' to 'LONG' requires a narrowing conversion
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(103,33): warning C4244: 'initializing': conversion from 'float' to 'LONG', possible loss of data
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(103,46): warning C4838: conversion from 'float' to 'LONG' requires a narrowing conversion
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(103,46): warning C4244: 'initializing': conversion from 'float' to 'LONG', possible loss of data
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(697,42): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(701,42): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(705,42): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(709,42): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(713,42): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(717,42): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-  Physics.cpp
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Physics.cpp(78,29): warning C4267: 'initializing': conversion from 'size_t' to 'uint32', possible loss of data
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Physics.cpp(185,30): warning C4267: 'initializing': conversion from 'size_t' to 'uint32', possible loss of data
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Physics.cpp(329,35): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Physics.cpp(582,30): warning C4267: 'initializing': conversion from 'size_t' to 'uint32', possible loss of data
-  Rigidbody.cpp
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Rigidbody.cpp(92,79): warning C4305: 'argument': truncation from 'double' to 'float'
-  SphereCollider.cpp
-  Generating Code...
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(134): warning C4715: 'Game::WndProc': not all control paths return a value
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\CapsuleCollider.h(26): warning C4172: returning address of local variable or temporary
+  Scene.cpp
   Engine.vcxproj -> C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Libraries\Lib\Engine\Engine.lib

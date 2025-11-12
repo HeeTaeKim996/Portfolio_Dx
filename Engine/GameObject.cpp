@@ -557,7 +557,6 @@ shared_ptr<GameObject> GameObject::Clone(shared_ptr<Scene> scene, vector<shared_
 	copy->_scene = scene;
 	copy->_name = _name;
 	copy->_layermask = _layermask;
-
 	copy->_scripts.resize(_scripts.size());
 
 	int index = 0;
@@ -585,12 +584,8 @@ shared_ptr<GameObject> GameObject::Clone(shared_ptr<Scene> scene, vector<shared_
 		index++;
 	}
 
-
 	copy->_renderIndex = _renderIndex;
-
-
 	reserveGameObjects.push_back(copy);
-
 
 	shared_ptr<Transform> transform = GetTransform();
 	if (transform)
