@@ -1,5 +1,22 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Intermediate\Debug\) contains files shared from another project (AssimpTool.vcxproj, Engine.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  CameraScript.cpp
+  Goomba.cpp
+  Kachujin.cpp
+  PlayerController.cpp
+  PlayerMovement.cpp
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Client\PlayerMovement.cpp(380,40): warning C4244: 'argument': conversion from 'float' to 'myRay::int32', possible loss of data
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Client\PlayerMovement.cpp(380,19): warning C4244: 'argument': conversion from 'float' to 'myRay::int32', possible loss of data
+  PrefabInitializer.cpp
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Libraries\Include\Engine\Model.h(40,29): warning C4267: 'return': conversion from 'size_t' to 'uint32', possible loss of data
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Client\PrefabInitializer.cpp(266,26): warning C4244: 'argument': conversion from 'float' to 'int32', possible loss of data
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Client\PrefabInitializer.cpp(266,20): warning C4244: 'argument': conversion from 'float' to 'int32', possible loss of data
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Client\PrefabInitializer.cpp(279,59): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Client\PrefabInitializer.cpp(280,62): warning C4305: 'argument': truncation from 'double' to 'float'
+  ResourceInitializer2.cpp
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Libraries\Include\Engine\Model.h(40,29): warning C4267: 'return': conversion from 'size_t' to 'uint32', possible loss of data
+  SceneCodeLoader.cpp
+  TempRotator.cpp
+  Generating Code...
 DirectXTex_debug.lib(BC6HBC7.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(BC6HBC7.obj)' or at ''; linking object as if no debug info
-DirectXTex_debug.lib(DirectXTexD3D11.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(DirectXTexD3D11.obj)' or at ''; linking object as if no debug info
 DirectXTex_debug.lib(DirectXTexMipMaps.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(DirectXTexMipMaps.obj)' or at ''; linking object as if no debug info
   Client.vcxproj -> C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Binaries\Client.exe

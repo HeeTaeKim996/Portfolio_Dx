@@ -42,4 +42,3 @@ public:
 private:
 	unordered_map<string, vector<shared_ptr<GameObject>>> _prefabs;
 };
-

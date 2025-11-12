@@ -42,7 +42,6 @@ void RenderManager::Update() // TEMP
 }
 
 void RenderManager::PushGlobalData(const Matrix& view, const Matrix& projection, const Matrix& VInv)
-	// ※ 강의에는 VInv를 view.Invert로 하는데.. 효율 너무 안좋아보여서, 이렇게 매개변수로 받게 처리함
 {
 	_globalDesc.V = view;
 	_globalDesc.P = projection;
