@@ -32,7 +32,7 @@ public:
 
 private:
 	vector<ClProxy> proxies;
-	vector<uint32> freeList; // ¡Ø Generation (8)  + Index (24)
+	vector<uint32> freeList; 
 
 
 

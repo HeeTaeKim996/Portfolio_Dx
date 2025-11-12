@@ -57,7 +57,7 @@ void Rigidbody::OnCollisionEnter(const Collision& collision)
 {
 	if (useGravity && !_isGrounded)
 	{
-		if (Vec3::UnitY.Dot(collision.normal) > 0.5f) // ¡Ø cos(60) == 0.5f;
+		if (Vec3::UnitY.Dot(collision.normal) > 0.5f) // cos(60) == 0.5f;
 		{
 			_isGrounded = true;
 			velocity.Y = 0;

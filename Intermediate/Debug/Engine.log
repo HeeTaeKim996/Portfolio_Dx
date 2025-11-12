@@ -69,8 +69,10 @@
   67 File(s) copied
   C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\SimpleMath.inl
   1 File(s) copied
+  BaseCollider.cpp
   BoxCollider.cpp
   CapsuleCollider.cpp
+  Collision.cpp
   Game.cpp
 C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\SceneManager.h(18,48): warning C4227: anachronism used: qualifiers on reference are ignored
 C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(103,33): warning C4838: conversion from 'float' to 'LONG' requires a narrowing conversion
@@ -83,42 +85,16 @@ C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(705,
 C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(709,42): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
 C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(713,42): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
 C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(717,42): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-  InputManager.cpp
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\InputManager.cpp(64,34): warning C4244: '=': conversion from 'LONG' to 'float', possible loss of data
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\InputManager.cpp(65,34): warning C4244: '=': conversion from 'LONG' to 'float', possible loss of data
-  MeshRenderer.cpp
-  Model.cpp
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Model.h(40,29): warning C4267: 'return': conversion from 'size_t' to 'uint32', possible loss of data
-  ModelAnimator.cpp
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Model.h(40,29): warning C4267: 'return': conversion from 'size_t' to 'uint32', possible loss of data
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelAnimator.cpp(414,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelAnimator.cpp(544,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelAnimator.cpp(858,24): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelAnimator.cpp(865,24): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelAnimator.cpp(985,42): warning C4018: '>': signed/unsigned mismatch
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelAnimator.cpp(989,39): warning C4018: '>': signed/unsigned mismatch
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelAnimator.cpp(1022,42): warning C4018: '>': signed/unsigned mismatch
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelAnimator.cpp(1026,39): warning C4018: '>': signed/unsigned mismatch
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelAnimator.cpp(1106,2): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelAnimator.cpp(1114,2): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelAnimator.cpp(1129,2): warning C4018: '<': signed/unsigned mismatch
-  ModelRenderer.cpp
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Model.h(40,29): warning C4267: 'return': conversion from 'size_t' to 'uint32', possible loss of data
+  GameObject.cpp
   Physics.cpp
 C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Physics.cpp(78,29): warning C4267: 'initializing': conversion from 'size_t' to 'uint32', possible loss of data
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Physics.cpp(187,30): warning C4267: 'initializing': conversion from 'size_t' to 'uint32', possible loss of data
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Physics.cpp(335,35): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Physics.cpp(588,30): warning C4267: 'initializing': conversion from 'size_t' to 'uint32', possible loss of data
-  PrefabManager.cpp
-  RenderManager.cpp
-  ResourceManager.cpp
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Physics.cpp(185,30): warning C4267: 'initializing': conversion from 'size_t' to 'uint32', possible loss of data
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Physics.cpp(329,35): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Physics.cpp(582,30): warning C4267: 'initializing': conversion from 'size_t' to 'uint32', possible loss of data
   Rigidbody.cpp
 C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Rigidbody.cpp(92,79): warning C4305: 'argument': truncation from 'double' to 'float'
   Scene.cpp
-  SceneManager.cpp
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\SceneManager.h(18,48): warning C4227: anachronism used: qualifiers on reference are ignored
   SphereCollider.cpp
-  TimeManager.cpp
   Generating Code...
 C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(134): warning C4715: 'Game::WndProc': not all control paths return a value
 C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\CapsuleCollider.h(26): warning C4172: returning address of local variable or temporary

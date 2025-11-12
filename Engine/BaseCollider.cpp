@@ -9,7 +9,7 @@
 BaseCollider::BaseCollider(ColliderType colliderType, shared_ptr<Shader> shader)
 	: Super(ComponentType::Collider), _colliderType(colliderType), _shader(shader)
 {
-	_mesh = nullptr; // 상속에서 정의
+	_mesh = nullptr;
 }
 
 BaseCollider::~BaseCollider()
@@ -100,5 +100,3 @@ void BaseCollider::RemoveRigidbody()
 		proxy->hasRigidbody = false;
 	}
 }
-
-

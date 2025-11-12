@@ -39,4 +39,3 @@ private:
 	Vec3 _halfExtents = Vec3(0.5f, 0.5f, 0.5f);
 	Quaternion _collidersQuaternion;
 };
-

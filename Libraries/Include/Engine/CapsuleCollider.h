@@ -46,4 +46,3 @@ private:
 private:
 	shared_ptr<Mesh> tempAdditionalMesh;
 };
-

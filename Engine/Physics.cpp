@@ -79,9 +79,7 @@ uint32 Physics::CreateProxy(BaseCollider& collider)
 
 		static uint32 limitInt = PROXY_ID_IS_NOT_ASSIGNED & 0x00'FF'FF'FF;
 		assert(id < limitInt); 
-		/* ※ Collider 에서 proxyId 가 할당되지 않았음으로, UINT32_MAX 를 사용한다.
-			 id 가 UINT32_MAX 와 중복되는 걸 방지하기 위해, limitInt 보다 작은 id (24) 가 할당돼야 한다.
-			 만약 위 assert가 발동된다면, uint32 가 아닌 uint64로 id 관리 필요 */
+		
 		ClProxy proxy(&collider, collider.GetColliderType(), id, collider.HasRigidbody());
 		proxy.layerMask = collider.GetLayermask();
 
@@ -251,10 +249,6 @@ bool Physics::NarrowPhase(const ClProxy& a, const ClProxy& b)
 
 	if (aType == ColliderType::Sphere)
 	{
-		/*
-			- 주의. collisionInfo 의 normal이 뒤집히지 않도록, aCollider 에서 Intersects 함수 호출 필요
-			- myMath 에서 this <- other 방향으로 normal을 정함
-		*/
 		SphereCollider* aSphere = static_cast<SphereCollider*>(a.ptr);
 		if (bType == ColliderType::Sphere)
 		{
@@ -597,20 +591,15 @@ void Physics::PhysicsUpdate()
 		shared_ptr<Rigidbody> rigidbody = proxy.ptr->GetRigidbody();
 		shared_ptr<Transform> transform = proxy.ptr->GetGameObject()->GetTransform();
 
-		if (proxy.isDirty) // Transform 에서 이미 isDirty 처리했다면, Rigidbody 연산 전 포지션 업데이트 필요
+		if (proxy.isDirty)
 		{
 			rigidbody->position = transform->GetPosition();
 		}
 
 
 		if (UpdateRigidbody(rigidbody))
-		{
-			//proxy.isDirty = true; // Rigidbody 로 움직였으므로, Intersects 테스트 필요 
-			// ※ 현재 코드에서는 아래 SetPosition 에서 자동 호출
-			
-			transform->SetPosition(rigidbody->position); 
-			// Transofrm 을 굳이 여기서 Update해야 하나 싶지만, 현재 코드에는 UpdateColliderTransofrm 을 하려면 Transform을 갱신해야 돼서,
-			// 이렇게 처리함. SetPosition호출시 UpdateColliderTransofrm 자동 호출
+		{			
+			transform->SetPosition(rigidbody->position);
 		}
 
 
@@ -867,4 +856,3 @@ bool Physics::UpdateRigidbody(shared_ptr<Rigidbody> rigidbody)
 	
 	return true;
 }
-

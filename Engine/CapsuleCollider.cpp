@@ -30,7 +30,7 @@ void CapsuleCollider::Render()
 		float scaleFloat = _boundingCapsule.radius * 2.f;
 		Vec3 scale(scaleFloat, scaleFloat, scaleFloat);
 
-		Quaternion quat = transform->GetRotation() * _capsuleQuaternion; // top - bottom 정보 이용해서, quat 구하고 싶은데, 생각이 안남
+		Quaternion quat = transform->GetRotation() * _capsuleQuaternion;
 
 		//Vec3 move = i == 0 ? _boundingCapsule.top - _center : _boundingCapsule.bottom - _center;
 		Vec3 translation = i == 0 ? _boundingCapsule.top : _boundingCapsule.bottom;
@@ -54,7 +54,7 @@ void CapsuleCollider::Render()
 		float xzScale = _boundingCapsule.radius * 2.f;
 
 		Vec3 scale = myVec3(xzScale, yScale, xzScale);
-		Quaternion quat = transform->GetRotation() * _capsuleQuaternion; // top - bottom 정보 이용해서, quat 구하고 싶은데, 생각이 안남
+		Quaternion quat = transform->GetRotation() * _capsuleQuaternion;
 		Vec3 translation = (_boundingCapsule.top + _boundingCapsule.bottom) / 2.f;
 
 		Matrix world(scale, quat, translation);
@@ -92,7 +92,6 @@ void CapsuleCollider::UpdateColliderTransform(shared_ptr<Transform> transform)
 	if (proxyId == PROXY_ID_IS_NOT_ASSIGNED)
 		return;
 
-	//ClProxy& proxy = PHYSICS->GetProxy(proxyId);
 	ClProxy* proxy;
 	if (!PHYSICS->GetProxy(proxyId, proxy))
 		return;
@@ -131,4 +130,3 @@ shared_ptr<Component> CapsuleCollider::Clone() const
 
 	return copy;
 }
-

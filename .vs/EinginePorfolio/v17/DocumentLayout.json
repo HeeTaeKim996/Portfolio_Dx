@@ -3,12 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\TimeManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\TimeManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Rigidbody.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Rigidbody.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Rigidbody.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Rigidbody.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Physics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:2:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Physics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Physics.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Physics.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\SphereCollider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\SphereCollider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\SphereCollider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\SphereCollider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Collision.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Collision.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Collision.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Collision.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\CapsuleCollider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\CapsuleCollider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\CapsuleCollider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\CapsuleCollider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\BoxCollider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\BoxCollider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\BoxCollider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\BoxCollider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\BaseCollider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\BaseCollider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\BaseCollider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\BaseCollider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\TimeManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\TimeManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\TimeManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\TimeManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ResourceManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -335,14 +391,6 @@
       "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Utils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Rigidbody.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Rigidbody.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Rigidbody.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Rigidbody.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:3:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ModelAnimator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:3:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\ModelAnimator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -379,40 +427,8 @@
       "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Component.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\BaseCollider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\BaseCollider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\BaseCollider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\BaseCollider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:2:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Physics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:2:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Physics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\BoxCollider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\BoxCollider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2C2E742C-7033-47A7-B73E-8B7C64B1DE6E}|MyMath\\MyMath.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\MyMath\\myVec3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2C2E742C-7033-47A7-B73E-8B7C64B1DE6E}|MyMath\\MyMath.vcxproj|solutionrelative:MyMath\\myVec3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\BoxCollider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\BoxCollider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\SphereCollider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\SphereCollider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\CapsuleCollider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\CapsuleCollider.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Physics.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Physics.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Types.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -466,18 +482,6 @@
       "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Transform.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\CapsuleCollider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\CapsuleCollider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Collision.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Collision.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\SphereCollider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\SphereCollider.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\MeshRenderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\MeshRenderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -527,10 +531,6 @@
     {
       "AbsoluteMoniker": "D:2:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Shaders\\PortfolioShader.fx||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:2:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Shaders\\PortfolioShader.fx||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Collision.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4F5C1012-31BD-4947-831E-BF2CC095398F}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Collision.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2C2E742C-7033-47A7-B73E-8B7C64B1DE6E}|MyMath\\MyMath.vcxproj|C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\MyMath\\ContactInfo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -997,38 +997,103 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 208,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 215,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RenderManager.h",
-              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\RenderManager.h",
-              "RelativeDocumentMoniker": "Engine\\RenderManager.h",
-              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\RenderManager.h",
-              "RelativeToolTip": "Engine\\RenderManager.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAArAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Collision.h",
+              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Collision.h",
+              "RelativeDocumentMoniker": "Engine\\Collision.h",
+              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Collision.h",
+              "RelativeToolTip": "Engine\\Collision.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-10-03T08:46:20.302Z",
+              "WhenOpened": "2025-09-29T06:29:15.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SphereCollider.h",
+              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\SphereCollider.h",
+              "RelativeDocumentMoniker": "Engine\\SphereCollider.h",
+              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\SphereCollider.h",
+              "RelativeToolTip": "Engine\\SphereCollider.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-27T04:04:50.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CapsuleCollider.h",
+              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\CapsuleCollider.h",
+              "RelativeDocumentMoniker": "Engine\\CapsuleCollider.h",
+              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\CapsuleCollider.h",
+              "RelativeToolTip": "Engine\\CapsuleCollider.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-28T05:56:10.915Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ResourceManager.h",
-              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ResourceManager.h",
-              "RelativeDocumentMoniker": "Engine\\ResourceManager.h",
-              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ResourceManager.h",
-              "RelativeToolTip": "Engine\\ResourceManager.h",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAHQAAAAHAAAAAAAAAA==",
+              "Title": "Physics.h",
+              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Physics.h",
+              "RelativeDocumentMoniker": "Engine\\Physics.h",
+              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Physics.h",
+              "RelativeToolTip": "Engine\\Physics.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-22T07:46:23.135Z",
+              "WhenOpened": "2025-10-01T23:58:16.5Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Rigidbody.h",
+              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Rigidbody.h",
+              "RelativeDocumentMoniker": "Engine\\Rigidbody.h",
+              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Rigidbody.h",
+              "RelativeToolTip": "Engine\\Rigidbody.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-29T11:42:05.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BoxCollider.h",
+              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\BoxCollider.h",
+              "RelativeDocumentMoniker": "Engine\\BoxCollider.h",
+              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\BoxCollider.h",
+              "RelativeToolTip": "Engine\\BoxCollider.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-01T23:58:38.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BaseCollider.h",
+              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\BaseCollider.h",
+              "RelativeDocumentMoniker": "Engine\\BaseCollider.h",
+              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\BaseCollider.h",
+              "RelativeToolTip": "Engine\\BaseCollider.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-29T13:12:31.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "TimeManager.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\TimeManager.h",
               "RelativeDocumentMoniker": "Engine\\TimeManager.h",
@@ -1041,7 +1106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 21,
               "Title": "PrefabManager.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\PrefabManager.h",
               "RelativeDocumentMoniker": "Engine\\PrefabManager.h",
@@ -1049,12 +1114,35 @@
               "RelativeToolTip": "Engine\\PrefabManager.h",
               "ViewState": "AgIAABgAAAAAAAAAAAAAACsAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-12T05:33:25.825Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-12T05:33:25.825Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
+              "Title": "ResourceManager.h",
+              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ResourceManager.h",
+              "RelativeDocumentMoniker": "Engine\\ResourceManager.h",
+              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ResourceManager.h",
+              "RelativeToolTip": "Engine\\ResourceManager.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAHQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-22T07:46:23.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RenderManager.h",
+              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\RenderManager.h",
+              "RelativeDocumentMoniker": "Engine\\RenderManager.h",
+              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\RenderManager.h",
+              "RelativeToolTip": "Engine\\RenderManager.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-03T08:46:20.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "InputManager.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\InputManager.h",
               "RelativeDocumentMoniker": "Engine\\InputManager.h",
@@ -1062,12 +1150,11 @@
               "RelativeToolTip": "Engine\\InputManager.h",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAGYAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-12T05:31:25.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-12T05:31:25.606Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 35,
               "Title": "SceneManager.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\SceneManager.h",
               "RelativeDocumentMoniker": "Engine\\SceneManager.h",
@@ -1079,7 +1166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 32,
               "Title": "Timer.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Timer.h",
               "RelativeDocumentMoniker": "Engine\\Timer.h",
@@ -1091,7 +1178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 30,
               "Title": "TimerActor.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\TimerActor.h",
               "RelativeDocumentMoniker": "Engine\\TimerActor.h",
@@ -1103,7 +1190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 26,
               "Title": "Graphics.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Graphics.h",
               "RelativeDocumentMoniker": "Engine\\Graphics.h",
@@ -1115,7 +1202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 24,
               "Title": "ImGuiManager.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ImGuiManager.h",
               "RelativeDocumentMoniker": "Engine\\ImGuiManager.h",
@@ -1123,12 +1210,11 @@
               "RelativeToolTip": "Engine\\ImGuiManager.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-10T04:26:51.824Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-10T04:26:51.824Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 36,
               "Title": "Scene.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Scene.h",
               "RelativeDocumentMoniker": "Engine\\Scene.h",
@@ -1140,7 +1226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 28,
               "Title": "TimerManager.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\TimerManager.h",
               "RelativeDocumentMoniker": "Engine\\TimerManager.h",
@@ -1152,7 +1238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 50,
               "Title": "ConstantBuffer.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ConstantBuffer.h",
               "RelativeDocumentMoniker": "Engine\\ConstantBuffer.h",
@@ -1164,7 +1250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 48,
               "Title": "Geometry.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Geometry.h",
               "RelativeDocumentMoniker": "Engine\\Geometry.h",
@@ -1176,7 +1262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 42,
               "Title": "VertexBuffer.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\VertexBuffer.h",
               "RelativeDocumentMoniker": "Engine\\VertexBuffer.h",
@@ -1188,7 +1274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 41,
               "Title": "VertexData.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\VertexData.h",
               "RelativeDocumentMoniker": "Engine\\VertexData.h",
@@ -1200,7 +1286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 47,
               "Title": "GeometryHelper.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\GeometryHelper.h",
               "RelativeDocumentMoniker": "Engine\\GeometryHelper.h",
@@ -1212,7 +1298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 44,
               "Title": "IndexBuffer.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\IndexBuffer.h",
               "RelativeDocumentMoniker": "Engine\\IndexBuffer.h",
@@ -1224,7 +1310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 55,
               "Title": "ResourceBase.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ResourceBase.h",
               "RelativeDocumentMoniker": "Engine\\ResourceBase.h",
@@ -1236,7 +1322,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 58,
               "Title": "Material.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Material.h",
               "RelativeDocumentMoniker": "Engine\\Material.h",
@@ -1248,7 +1334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 61,
               "Title": "ModelMesh.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ModelMesh.h",
               "RelativeDocumentMoniker": "Engine\\ModelMesh.h",
@@ -1260,7 +1346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 52,
               "Title": "Texture.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Texture.h",
               "RelativeDocumentMoniker": "Engine\\Texture.h",
@@ -1272,7 +1358,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 62,
               "Title": "ModelAnimation.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ModelAnimation.h",
               "RelativeDocumentMoniker": "Engine\\ModelAnimation.h",
@@ -1284,7 +1370,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 65,
               "Title": "Model.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Model.h",
               "RelativeDocumentMoniker": "Engine\\Model.h",
@@ -1296,7 +1382,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 56,
               "Title": "Mesh.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Mesh.h",
               "RelativeDocumentMoniker": "Engine\\Mesh.h",
@@ -1308,7 +1394,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 67,
               "Title": "Game.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Game.h",
               "RelativeDocumentMoniker": "Engine\\Game.h",
@@ -1320,7 +1406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 69,
               "Title": "SceneCodeLoader.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\SceneCodeLoader.h",
               "RelativeDocumentMoniker": "Client\\SceneCodeLoader.h",
@@ -1332,7 +1418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 71,
               "Title": "ResourceInitializer2.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\ResourceInitializer2.h",
               "RelativeDocumentMoniker": "Client\\ResourceInitializer2.h",
@@ -1344,7 +1430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 73,
               "Title": "PrefabInitializer.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\PrefabInitializer.h",
               "RelativeDocumentMoniker": "Client\\PrefabInitializer.h",
@@ -1356,7 +1442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 75,
               "Title": "MonobehaviourLoader.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\MonobehaviourLoader.h",
               "RelativeDocumentMoniker": "Client\\MonobehaviourLoader.h",
@@ -1368,7 +1454,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 76,
               "Title": "pch.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\pch.h",
               "RelativeDocumentMoniker": "Client\\pch.h",
@@ -1380,7 +1466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 78,
               "Title": "Main.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\Main.h",
               "RelativeDocumentMoniker": "Client\\Main.h",
@@ -1392,7 +1478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 80,
               "Title": "TempRotator.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\TempRotator.h",
               "RelativeDocumentMoniker": "Client\\TempRotator.h",
@@ -1404,7 +1490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 82,
               "Title": "Kachujin.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\Kachujin.h",
               "RelativeDocumentMoniker": "Client\\Kachujin.h",
@@ -1416,7 +1502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 85,
               "Title": "CameraScript.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\CameraScript.h",
               "RelativeDocumentMoniker": "Client\\CameraScript.h",
@@ -1428,7 +1514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 86,
               "Title": "AnimationHelper.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\AnimationHelper.h",
               "RelativeDocumentMoniker": "Client\\AnimationHelper.h",
@@ -1440,7 +1526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 88,
               "Title": "PlayerMovement.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\PlayerMovement.h",
               "RelativeDocumentMoniker": "Client\\PlayerMovement.h",
@@ -1452,7 +1538,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 90,
               "Title": "PlayerController.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\PlayerController.h",
               "RelativeDocumentMoniker": "Client\\PlayerController.h",
@@ -1464,7 +1550,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 92,
               "Title": "Goomba.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\Goomba.h",
               "RelativeDocumentMoniker": "Client\\Goomba.h",
@@ -1476,7 +1562,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 95,
               "Title": "AssimpTool.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\AssimpTool\\AssimpTool.h",
               "RelativeDocumentMoniker": "AssimpTool\\AssimpTool.h",
@@ -1488,19 +1574,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
-              "Title": "Rigidbody.h",
-              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Rigidbody.h",
-              "RelativeDocumentMoniker": "Engine\\Rigidbody.h",
-              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Rigidbody.h",
-              "RelativeToolTip": "Engine\\Rigidbody.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-29T11:42:05.205Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 96,
               "Title": "Utils.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Utils.cpp",
               "RelativeDocumentMoniker": "Engine\\Utils.cpp",
@@ -1512,7 +1586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 98,
               "Title": "ModelAnimator.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ModelAnimator.cpp",
               "RelativeDocumentMoniker": "Engine\\ModelAnimator.cpp",
@@ -1524,7 +1598,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 99,
               "Title": "ModelAnimator.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ModelAnimator.h",
               "RelativeDocumentMoniker": "Engine\\ModelAnimator.h",
@@ -1536,7 +1610,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 101,
               "Title": "ModelAnimator.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ModelAnimator.cpp",
               "RelativeDocumentMoniker": "Engine\\ModelAnimator.cpp",
@@ -1548,7 +1622,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 104,
               "Title": "GameObject.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\GameObject.h",
               "RelativeDocumentMoniker": "Engine\\GameObject.h",
@@ -1560,19 +1634,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
-              "Title": "BoxCollider.h",
-              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\BoxCollider.h",
-              "RelativeDocumentMoniker": "Engine\\BoxCollider.h",
-              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\BoxCollider.h",
-              "RelativeToolTip": "Engine\\BoxCollider.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-10-01T23:58:38.061Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 103,
               "Title": "Component.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Component.h",
               "RelativeDocumentMoniker": "Engine\\Component.h",
@@ -1581,30 +1643,6 @@
               "ViewState": "AgIAAAsAAAAAAAAAAAAlwBUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-10-03T00:50:53.014Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 94,
-              "Title": "BaseCollider.h",
-              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\BaseCollider.h",
-              "RelativeDocumentMoniker": "Engine\\BaseCollider.h",
-              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\BaseCollider.h",
-              "RelativeToolTip": "Engine\\BaseCollider.h",
-              "ViewState": "AgIAACQAAAAAAAAAAAAlwEcAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-29T13:12:31.773Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 102,
-              "Title": "Physics.h",
-              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Physics.h",
-              "RelativeDocumentMoniker": "Engine\\Physics.h",
-              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Physics.h",
-              "RelativeToolTip": "Engine\\Physics.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-10-01T23:58:16.5Z"
             },
             {
               "$type": "Document",
@@ -1632,7 +1670,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
+              "DocumentIndex": 112,
               "Title": "myBoundingCapsule.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\MyMath\\myBoundingCapsule.cpp",
               "RelativeDocumentMoniker": "MyMath\\myBoundingCapsule.cpp",
@@ -1644,7 +1682,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 110,
               "Title": "myBoundingSphere.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\MyMath\\myBoundingSphere.h",
               "RelativeDocumentMoniker": "MyMath\\myBoundingSphere.h",
@@ -1656,7 +1694,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
+              "DocumentIndex": 113,
               "Title": "myBoundingOrientedBox.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\MyMath\\myBoundingOrientedBox.h",
               "RelativeDocumentMoniker": "MyMath\\myBoundingOrientedBox.h",
@@ -1668,7 +1706,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 115,
               "Title": "Scenes.xml",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Assets\\Scenes\\Scenes.xml",
               "RelativeDocumentMoniker": "Assets\\Scenes\\Scenes.xml",
@@ -1692,7 +1730,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 116,
               "Title": "vector",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\include\\vector",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\include\\vector",
@@ -1704,7 +1742,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
+              "DocumentIndex": 118,
               "Title": "Timer.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Libraries\\Include\\Engine\\Timer.h",
               "RelativeDocumentMoniker": "Libraries\\Include\\Engine\\Timer.h",
@@ -1728,43 +1766,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 118,
-              "Title": "SphereCollider.h",
-              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\SphereCollider.h",
-              "RelativeDocumentMoniker": "Engine\\SphereCollider.h",
-              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\SphereCollider.h",
-              "RelativeToolTip": "Engine\\SphereCollider.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-27T04:04:50.407Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 117,
-              "Title": "Collision.h",
-              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Collision.h",
-              "RelativeDocumentMoniker": "Engine\\Collision.h",
-              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Collision.h",
-              "RelativeToolTip": "Engine\\Collision.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-29T06:29:15.11Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 116,
-              "Title": "CapsuleCollider.h",
-              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\CapsuleCollider.h",
-              "RelativeDocumentMoniker": "Engine\\CapsuleCollider.h",
-              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\CapsuleCollider.h",
-              "RelativeToolTip": "Engine\\CapsuleCollider.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-28T05:56:10.915Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 119,
+              "DocumentIndex": 120,
               "Title": "MeshRenderer.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\MeshRenderer.h",
               "RelativeDocumentMoniker": "Engine\\MeshRenderer.h",
@@ -1776,7 +1778,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 120,
+              "DocumentIndex": 121,
               "Title": "ModelRenderer.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ModelRenderer.h",
               "RelativeDocumentMoniker": "Engine\\ModelRenderer.h",
@@ -1788,7 +1790,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 121,
+              "DocumentIndex": 122,
               "Title": "ModelRenderer.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ModelRenderer.cpp",
               "RelativeDocumentMoniker": "Engine\\ModelRenderer.cpp",
@@ -1800,7 +1802,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 122,
+              "DocumentIndex": 123,
               "Title": "Renderer.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Renderer.h",
               "RelativeDocumentMoniker": "Engine\\Renderer.h",
@@ -1812,7 +1814,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 123,
+              "DocumentIndex": 124,
               "Title": "Camera.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Camera.h",
               "RelativeDocumentMoniker": "Engine\\Camera.h",
@@ -1824,7 +1826,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 124,
+              "DocumentIndex": 125,
               "Title": "Transform.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Transform.h",
               "RelativeDocumentMoniker": "Engine\\Transform.h",
@@ -1836,7 +1838,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 126,
+              "DocumentIndex": 127,
               "Title": "TransformBase.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\MyMath\\TransformBase.cpp",
               "RelativeDocumentMoniker": "MyMath\\TransformBase.cpp",
@@ -1848,7 +1850,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 125,
+              "DocumentIndex": 126,
               "Title": "myVec3.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\MyMath\\myVec3.h",
               "RelativeDocumentMoniker": "MyMath\\myVec3.h",
@@ -1860,7 +1862,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 127,
+              "DocumentIndex": 128,
               "Title": "myQuaternion.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\MyMath\\myQuaternion.h",
               "RelativeDocumentMoniker": "MyMath\\myQuaternion.h",
@@ -1872,7 +1874,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 129,
+              "DocumentIndex": 130,
               "Title": "ModelAnimator.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\AppData\\Local\\Temp\\_AZTMP1_\\ModelAnimator.cpp",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\_AZTMP1_\\ModelAnimator.cpp",
@@ -1884,7 +1886,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 130,
+              "DocumentIndex": 131,
               "Title": "PortfolioShader.fx",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Shaders\\PortfolioShader.fx",
               "RelativeDocumentMoniker": "Shaders\\PortfolioShader.fx",
@@ -2712,38 +2714,116 @@
           ]
         },
         {
-          "DockedWidth": 192,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 185,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Collision.cpp",
+              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Collision.cpp",
+              "RelativeDocumentMoniker": "Engine\\Collision.cpp",
+              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Collision.cpp",
+              "RelativeToolTip": "Engine\\Collision.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-29T06:29:16.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SphereCollider.cpp",
+              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\SphereCollider.cpp",
+              "RelativeDocumentMoniker": "Engine\\SphereCollider.cpp",
+              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\SphereCollider.cpp",
+              "RelativeToolTip": "Engine\\SphereCollider.cpp",
+              "ViewState": "AgIAAFgAAAAA3jIxJ1shwEYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-25T05:22:24.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Physics.cpp",
+              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Physics.cpp",
+              "RelativeDocumentMoniker": "Engine\\Physics.cpp",
+              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Physics.cpp",
+              "RelativeToolTip": "Engine\\Physics.cpp",
+              "ViewState": "AgIAAGUCAAAAAAAAAAAgwFkDAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-02T05:15:29.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Rigidbody.cpp",
+              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Rigidbody.cpp",
+              "RelativeDocumentMoniker": "Engine\\Rigidbody.cpp",
+              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Rigidbody.cpp",
+              "RelativeToolTip": "Engine\\Rigidbody.cpp",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-29T11:42:06.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CapsuleCollider.cpp",
+              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\CapsuleCollider.cpp",
+              "RelativeDocumentMoniker": "Engine\\CapsuleCollider.cpp",
+              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\CapsuleCollider.cpp",
+              "RelativeToolTip": "Engine\\CapsuleCollider.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-30T03:37:28.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BoxCollider.cpp",
+              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\BoxCollider.cpp",
+              "RelativeDocumentMoniker": "Engine\\BoxCollider.cpp",
+              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\BoxCollider.cpp",
+              "RelativeToolTip": "Engine\\BoxCollider.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-30T03:34:26.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BaseCollider.cpp",
+              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\BaseCollider.cpp",
+              "RelativeDocumentMoniker": "Engine\\BaseCollider.cpp",
+              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\BaseCollider.cpp",
+              "RelativeToolTip": "Engine\\BaseCollider.cpp",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAGUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-30T07:50:37.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "TimeManager.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\TimeManager.cpp",
               "RelativeDocumentMoniker": "Engine\\TimeManager.cpp",
               "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\TimeManager.cpp",
               "RelativeToolTip": "Engine\\TimeManager.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACIAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-23T05:35:25.018Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ResourceManager.cpp",
-              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ResourceManager.cpp",
-              "RelativeDocumentMoniker": "Engine\\ResourceManager.cpp",
-              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ResourceManager.cpp",
-              "RelativeToolTip": "Engine\\ResourceManager.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-12T05:33:56.471Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 19,
               "Title": "RenderManager.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\RenderManager.cpp",
               "RelativeDocumentMoniker": "Engine\\RenderManager.cpp",
@@ -2751,12 +2831,23 @@
               "RelativeToolTip": "Engine\\RenderManager.cpp",
               "ViewState": "AgIAACcAAAAAAAAAAAAAACsAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-12T05:33:38.928Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-12T05:33:38.928Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
+              "Title": "ResourceManager.cpp",
+              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ResourceManager.cpp",
+              "RelativeDocumentMoniker": "Engine\\ResourceManager.cpp",
+              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ResourceManager.cpp",
+              "RelativeToolTip": "Engine\\ResourceManager.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-12T05:33:56.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "PrefabManager.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\PrefabManager.cpp",
               "RelativeDocumentMoniker": "Engine\\PrefabManager.cpp",
@@ -2764,12 +2855,11 @@
               "RelativeToolTip": "Engine\\PrefabManager.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-12T05:33:25.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-12T05:33:25.249Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 31,
               "Title": "TimerActor.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\TimerActor.cpp",
               "RelativeDocumentMoniker": "Engine\\TimerActor.cpp",
@@ -2781,7 +2871,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 33,
               "Title": "Timer.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Timer.cpp",
               "RelativeDocumentMoniker": "Engine\\Timer.cpp",
@@ -2793,7 +2883,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 25,
               "Title": "ImGuiManager.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ImGuiManager.cpp",
               "RelativeDocumentMoniker": "Engine\\ImGuiManager.cpp",
@@ -2801,12 +2891,11 @@
               "RelativeToolTip": "Engine\\ImGuiManager.cpp",
               "ViewState": "AgIAAOEBAAAAAAAAAAAgwAsCAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-30T07:38:59.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-30T07:38:59.964Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 22,
               "Title": "InputManager.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\InputManager.cpp",
               "RelativeDocumentMoniker": "Engine\\InputManager.cpp",
@@ -2814,12 +2903,11 @@
               "RelativeToolTip": "Engine\\InputManager.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-04T01:19:13.101Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-04T01:19:13.101Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 27,
               "Title": "Graphics.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Graphics.cpp",
               "RelativeDocumentMoniker": "Engine\\Graphics.cpp",
@@ -2831,7 +2919,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 34,
               "Title": "SceneManager.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\SceneManager.cpp",
               "RelativeDocumentMoniker": "Engine\\SceneManager.cpp",
@@ -2843,7 +2931,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 29,
               "Title": "TimerManager.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\TimerManager.cpp",
               "RelativeDocumentMoniker": "Engine\\TimerManager.cpp",
@@ -2855,7 +2943,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 37,
               "Title": "Scene.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Scene.cpp",
               "RelativeDocumentMoniker": "Engine\\Scene.cpp",
@@ -2867,7 +2955,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 46,
               "Title": "GeometryHelper.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\GeometryHelper.cpp",
               "RelativeDocumentMoniker": "Engine\\GeometryHelper.cpp",
@@ -2879,7 +2967,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 45,
               "Title": "IndexBuffer.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\IndexBuffer.cpp",
               "RelativeDocumentMoniker": "Engine\\IndexBuffer.cpp",
@@ -2891,7 +2979,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 39,
               "Title": "Pass.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Pass.cpp",
               "RelativeDocumentMoniker": "Engine\\Pass.cpp",
@@ -2903,7 +2991,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 38,
               "Title": "Pass.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Pass.h",
               "RelativeDocumentMoniker": "Engine\\Pass.h",
@@ -2915,7 +3003,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 43,
               "Title": "VertexBuffer.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\VertexBuffer.cpp",
               "RelativeDocumentMoniker": "Engine\\VertexBuffer.cpp",
@@ -2927,7 +3015,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 40,
               "Title": "VertexData.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\VertexData.cpp",
               "RelativeDocumentMoniker": "Engine\\VertexData.cpp",
@@ -2939,7 +3027,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 49,
               "Title": "Geometry.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Geometry.cpp",
               "RelativeDocumentMoniker": "Engine\\Geometry.cpp",
@@ -2951,7 +3039,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 51,
               "Title": "ConstantBuffer.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ConstantBuffer.cpp",
               "RelativeDocumentMoniker": "Engine\\ConstantBuffer.cpp",
@@ -2963,7 +3051,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 53,
               "Title": "Texture.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Texture.cpp",
               "RelativeDocumentMoniker": "Engine\\Texture.cpp",
@@ -2975,7 +3063,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 54,
               "Title": "ResourceBase.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ResourceBase.cpp",
               "RelativeDocumentMoniker": "Engine\\ResourceBase.cpp",
@@ -2987,7 +3075,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 59,
               "Title": "Material.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Material.cpp",
               "RelativeDocumentMoniker": "Engine\\Material.cpp",
@@ -2999,7 +3087,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 60,
               "Title": "ModelMesh.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ModelMesh.cpp",
               "RelativeDocumentMoniker": "Engine\\ModelMesh.cpp",
@@ -3011,7 +3099,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 63,
               "Title": "ModelAnimation.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ModelAnimation.cpp",
               "RelativeDocumentMoniker": "Engine\\ModelAnimation.cpp",
@@ -3023,7 +3111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 57,
               "Title": "Mesh.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Mesh.cpp",
               "RelativeDocumentMoniker": "Engine\\Mesh.cpp",
@@ -3035,7 +3123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 64,
               "Title": "Model.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Model.cpp",
               "RelativeDocumentMoniker": "Engine\\Model.cpp",
@@ -3047,7 +3135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 70,
               "Title": "ResourceInitializer2.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\ResourceInitializer2.cpp",
               "RelativeDocumentMoniker": "Client\\ResourceInitializer2.cpp",
@@ -3059,7 +3147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 68,
               "Title": "SceneCodeLoader.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\SceneCodeLoader.cpp",
               "RelativeDocumentMoniker": "Client\\SceneCodeLoader.cpp",
@@ -3071,7 +3159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 66,
               "Title": "Game.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Game.cpp",
               "RelativeDocumentMoniker": "Engine\\Game.cpp",
@@ -3083,7 +3171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 72,
               "Title": "PrefabInitializer.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\PrefabInitializer.cpp",
               "RelativeDocumentMoniker": "Client\\PrefabInitializer.cpp",
@@ -3095,7 +3183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 74,
               "Title": "MonobehaviourLoader.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\MonobehaviourLoader.cpp",
               "RelativeDocumentMoniker": "Client\\MonobehaviourLoader.cpp",
@@ -3107,7 +3195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 77,
               "Title": "pch.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\pch.cpp",
               "RelativeDocumentMoniker": "Client\\pch.cpp",
@@ -3119,7 +3207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 79,
               "Title": "Main.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\Main.cpp",
               "RelativeDocumentMoniker": "Client\\Main.cpp",
@@ -3131,7 +3219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 81,
               "Title": "TempRotator.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\TempRotator.cpp",
               "RelativeDocumentMoniker": "Client\\TempRotator.cpp",
@@ -3143,7 +3231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 83,
               "Title": "Kachujin.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\Kachujin.cpp",
               "RelativeDocumentMoniker": "Client\\Kachujin.cpp",
@@ -3155,7 +3243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 84,
               "Title": "CameraScript.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\CameraScript.cpp",
               "RelativeDocumentMoniker": "Client\\CameraScript.cpp",
@@ -3167,7 +3255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 87,
               "Title": "AnimationHelper.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\AnimationHelper.cpp",
               "RelativeDocumentMoniker": "Client\\AnimationHelper.cpp",
@@ -3179,7 +3267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 89,
               "Title": "PlayerMovement.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\PlayerMovement.cpp",
               "RelativeDocumentMoniker": "Client\\PlayerMovement.cpp",
@@ -3191,7 +3279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 91,
               "Title": "PlayerController.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\PlayerController.cpp",
               "RelativeDocumentMoniker": "Client\\PlayerController.cpp",
@@ -3203,7 +3291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 93,
               "Title": "Goomba.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Client\\Goomba.cpp",
               "RelativeDocumentMoniker": "Client\\Goomba.cpp",
@@ -3215,7 +3303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 94,
               "Title": "AssimpTool.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\AssimpTool\\AssimpTool.cpp",
               "RelativeDocumentMoniker": "AssimpTool\\AssimpTool.cpp",
@@ -3227,19 +3315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
-              "Title": "Rigidbody.cpp",
-              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Rigidbody.cpp",
-              "RelativeDocumentMoniker": "Engine\\Rigidbody.cpp",
-              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Rigidbody.cpp",
-              "RelativeToolTip": "Engine\\Rigidbody.cpp",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAE0AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-29T11:42:06.776Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 97,
               "Title": "ModelAnimator.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ModelAnimator.cpp",
               "RelativeDocumentMoniker": "Engine\\ModelAnimator.cpp",
@@ -3251,7 +3327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 100,
               "Title": "GameObject.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\GameObject.cpp",
               "RelativeDocumentMoniker": "Engine\\GameObject.cpp",
@@ -3263,7 +3339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 102,
               "Title": "ModelAnimator.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\ModelAnimator.cpp",
               "RelativeDocumentMoniker": "Engine\\ModelAnimator.cpp",
@@ -3275,7 +3351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 105,
               "Title": "Component.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Component.cpp",
               "RelativeDocumentMoniker": "Engine\\Component.cpp",
@@ -3287,31 +3363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
-              "Title": "BaseCollider.cpp",
-              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\BaseCollider.cpp",
-              "RelativeDocumentMoniker": "Engine\\BaseCollider.cpp",
-              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\BaseCollider.cpp",
-              "RelativeToolTip": "Engine\\BaseCollider.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-30T07:50:37.887Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 96,
-              "Title": "Physics.cpp",
-              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Physics.cpp",
-              "RelativeDocumentMoniker": "Engine\\Physics.cpp",
-              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Physics.cpp",
-              "RelativeToolTip": "Engine\\Physics.cpp",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAlwHYAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-02T05:15:29.757Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 106,
               "Title": "myVec3.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\MyMath\\myVec3.cpp",
               "RelativeDocumentMoniker": "MyMath\\myVec3.cpp",
@@ -3323,43 +3375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
-              "Title": "BoxCollider.cpp",
-              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\BoxCollider.cpp",
-              "RelativeDocumentMoniker": "Engine\\BoxCollider.cpp",
-              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\BoxCollider.cpp",
-              "RelativeToolTip": "Engine\\BoxCollider.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAASwDUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-30T03:34:26.303Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 100,
-              "Title": "SphereCollider.cpp",
-              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\SphereCollider.cpp",
-              "RelativeDocumentMoniker": "Engine\\SphereCollider.cpp",
-              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\SphereCollider.cpp",
-              "RelativeToolTip": "Engine\\SphereCollider.cpp",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAwEYAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-25T05:22:24.981Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 101,
-              "Title": "CapsuleCollider.cpp",
-              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\CapsuleCollider.cpp",
-              "RelativeDocumentMoniker": "Engine\\CapsuleCollider.cpp",
-              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\CapsuleCollider.cpp",
-              "RelativeToolTip": "Engine\\CapsuleCollider.cpp",
-              "ViewState": "AgIAACwAAAAAAAAAAAAAwGMAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-30T03:37:28.533Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 108,
               "Title": "Physics.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Physics.cpp",
               "RelativeDocumentMoniker": "Engine\\Physics.cpp",
@@ -3367,11 +3383,12 @@
               "RelativeToolTip": "Engine\\Physics.cpp",
               "ViewState": "AgIAAKwCAAAAAAAAAAAlwC8DAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-25T11:51:10.447Z"
+              "WhenOpened": "2025-09-25T11:51:10.447Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 107,
               "Title": "Types.h",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Types.h",
               "RelativeDocumentMoniker": "Engine\\Types.h",
@@ -3383,7 +3400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 109,
               "Title": "myBoundingSphere.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\MyMath\\myBoundingSphere.cpp",
               "RelativeDocumentMoniker": "MyMath\\myBoundingSphere.cpp",
@@ -3395,7 +3412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 111,
               "Title": "myBoundingOrientedBox.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\MyMath\\myBoundingOrientedBox.cpp",
               "RelativeDocumentMoniker": "MyMath\\myBoundingOrientedBox.cpp",
@@ -3407,7 +3424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 114,
               "Title": "Goomba.xml",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Assets\\Resources\\Textures\\Goomba\\Goomba.xml",
               "RelativeDocumentMoniker": "Assets\\Resources\\Textures\\Goomba\\Goomba.xml",
@@ -3419,7 +3436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 117,
               "Title": "Converter.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\AssimpTool\\Converter.cpp",
               "RelativeDocumentMoniker": "AssimpTool\\Converter.cpp",
@@ -3431,7 +3448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 115,
+              "DocumentIndex": 119,
               "Title": "Transform.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Transform.cpp",
               "RelativeDocumentMoniker": "Engine\\Transform.cpp",
@@ -3443,7 +3460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 128,
+              "DocumentIndex": 129,
               "Title": "myVec4.cpp",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\MyMath\\myVec4.cpp",
               "RelativeDocumentMoniker": "MyMath\\myVec4.cpp",
@@ -3455,7 +3472,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 131,
+              "DocumentIndex": 132,
               "Title": "PortfolioShader.fx",
               "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Shaders\\PortfolioShader.fx",
               "RelativeDocumentMoniker": "Shaders\\PortfolioShader.fx",
@@ -3476,18 +3493,6 @@
               "ViewState": "AgIAAEAAAAAAAAAAAAAlwHUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-09-24T00:45:17.973Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 132,
-              "Title": "Collision.cpp",
-              "DocumentMoniker": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Collision.cpp",
-              "RelativeDocumentMoniker": "Engine\\Collision.cpp",
-              "ToolTip": "C:\\Users\\Heetae\\source\\repos\\EnginePortfolio\\EnginePorfolio\\Engine\\Collision.cpp",
-              "RelativeToolTip": "Engine\\Collision.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-29T06:29:16.267Z"
             },
             {
               "$type": "Document",

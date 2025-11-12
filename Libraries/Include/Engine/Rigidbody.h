@@ -2,8 +2,6 @@
 
 #include "Component.h"
 
-
-
 #define TERMINAL_FALL_SPEED -200.f
 #define GRAVITY 180.f
 
@@ -50,4 +48,3 @@ private:
 	Vec3 _position;
 	weak_ptr<BaseCollider> _collider;
 };
-

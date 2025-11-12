@@ -7,5 +7,3 @@ struct Collision
 	shared_ptr<BaseCollider> other;
 	Vec3 normal;
 };
-
-
