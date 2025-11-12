@@ -4,8 +4,8 @@
 
 enum class ProjectionType
 {
-	Perspective, // 원근
-	Orthographic, // 직교
+	Perspective,
+	Orthographic,
 };
 
 class Camera : public Component

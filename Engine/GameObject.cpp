@@ -16,13 +16,6 @@
 #include "BaseCollider.h"
 #include "Rigidbody.h"
 
-/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-	현재 게임 오브젝트의 _components 에 아무 것도 추가를 안한 상태에서, Update로
-	_components 에 접근시, 크래시가 난다. 원인 파악은 안했고 강의에서도
-	그부분을 아직 처리 안했기 때문에, 건들지 않았지만, 추후 처리 필요
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
-
-
 GameObject::GameObject()
 {
 
@@ -57,7 +50,7 @@ void GameObject::Start()
 
 	for (shared_ptr<Component>& component : _components)
 	{
-		if (component) // ※ OnEnable 다음에 Start라, compojnent->IsEnabled()를 확인 고민
+		if (component) 
 		{
 			component->Start();
 		}
@@ -235,8 +228,6 @@ void GameObject::Destroy()
 
 void GameObject::OnCollisionEnter(const Collision& collision)
 {
-	// ※ Collider 를 넣으면 재귀호출 되니, Fixed 는 필요한 컴퍼넌트만 직접 코딩
-
 	if (shared_ptr<Rigidbody> rigidbody = GetRigidbody())
 	{
 		rigidbody->OnCollisionEnter(collision);
@@ -250,8 +241,6 @@ void GameObject::OnCollisionEnter(const Collision& collision)
 
 void GameObject::OnCollisionStay(const Collision& collision)
 {
-	// ※ Collider 를 넣으면 재귀호출 되니, Fixed 는 필요한 컴퍼넌트만 직접 코딩
-
 	if (shared_ptr<Rigidbody> rigidbody = GetRigidbody())
 	{
 		rigidbody->OnCollisionStay(collision);
@@ -265,8 +254,6 @@ void GameObject::OnCollisionStay(const Collision& collision)
 
 void GameObject::OnCollisionExit(const Collision& collision)
 {
-	// ※ Collider 를 넣으면 재귀호출 되니, Fixed 는 필요한 컴퍼넌트만 직접 코딩
-
 	if (shared_ptr<Rigidbody> rigidbody = GetRigidbody())
 	{
 		rigidbody->OnCollisionExit(collision);
@@ -283,8 +270,6 @@ shared_ptr<Component> GameObject::GetFixedComponent(ComponentType type)
 	uint8 index = static_cast<uint8>(type);
 	assert(index < FIXED_COMPONENT_COUNT);
 	
-
-
 	return _components[index];
 }
 
@@ -601,9 +586,7 @@ shared_ptr<GameObject> GameObject::Clone(shared_ptr<Scene> scene, vector<shared_
 	}
 
 
-	copy->_renderIndex = _renderIndex;  // 작성 기준 필요 없지만, 혹시 모르니 처리
-
-
+	copy->_renderIndex = _renderIndex;
 
 
 	reserveGameObjects.push_back(copy);

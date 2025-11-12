@@ -36,14 +36,13 @@ void Camera::UpdateMatrix()
 	//Vec3 focusPosition = eyePosition + GetTransform()->GetZAxis();
 	//Vec3 upDirection = GetTransform()->GetYAxis();
 
-
 	myMatrix3x3 mat = GetTransform()->GetRotationMatrix();
 	Vec3 focusPosition = eyePosition + mat[2];
 	Vec3 upDirection = mat[1];
 
 	SetViewMatrix();
 	SetProjectionMatrix();
-	SetVInvMatrix(); // Pos 구하려 강의에서 구한 거라, 사실 GetTransform()->GetPosition(); 로 충분하지만, 혹시 모르니 처리
+	SetVInvMatrix();
 }
 
 void Camera::SetViewMatrix()
@@ -107,16 +106,11 @@ void Camera::WriteXML(tinyxml2::XMLDocument& doc, tinyxml2::XMLElement* parent)
 	cameraValuesElement->SetAttribute("Near", _near);
 	cameraValuesElement->SetAttribute("Far", _far);
 	cameraValuesElement->SetAttribute("FOV", _fov);
-
-	// ※ 필드멤버 Width 와 Height 는 GAME 의 GameDesc 에서 참조하기 때문에 필요 없음
-
 }
 
 shared_ptr<Component> Camera::Clone() const
 {
 	shared_ptr<Camera> copy = make_shared<Camera>(*this);
-
-	// TODO (깊은 복사가 필요한 부분 수동 입력)
 
 	return copy;
 }

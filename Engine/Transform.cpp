@@ -6,15 +6,6 @@
 #include "BaseCollider.h"
 
 
-/*-------------------------------------------
-		MyMath Library 사용 대체 코드
--------------------------------------------*/
-
-
-
-/*--------------
-	  생성자
----------------*/
 Transform::Transform() : Super(ComponentType::Transform)
 {
 }
@@ -34,9 +25,6 @@ void Transform::Awake()
 
 
 
-/*----------------------------
-	 로컬 트래스폼 관련 함수
------------------------------*/
 void Transform::SetLocalTransform(const TransformBase& InTransformBase)
 {
 	_localTransformBase = InTransformBase;
@@ -126,18 +114,11 @@ void Transform::AddLocalUnitZRotation(float InDegree)
 
 
 
-
-
-
-
 void Transform::SetLocalScale(const myVec3& InScale)
 {
 	_localTransformBase.SetScale(InScale);
 	UpdateWorld();
 }
-
-
-
 
 
 
@@ -252,12 +233,9 @@ void Transform::SetRoot(bool isSwitchingParent)
 	assert(it != parent.ChildEnd());
 #endif
 
-	// 부모 트랜스폼에서 자식 정보를 제거
 	parent.GetChildren().erase(it);
 
-	// 자신에게서 부모 정보를 제거
 	_parentPtr = nullptr;
-
 
 
 	if (!isSwitchingParent)
@@ -271,9 +249,7 @@ void Transform::SetRoot(bool isSwitchingParent)
 	}
 
 
-	// 로컬 정보를 월드 정보로 변경한다
 	UpdateLocal();
-
 }
 
 
@@ -294,12 +270,10 @@ void Transform::SetParent(Transform& parentTransform)
 {
 	if (HasParent())
 	{
-		// 현재 노드를 부모로부터 분리
 		SetRoot(true);
 	}
 	else
 	{
-		// 기존 루트 오브젝트였다면, 씬에서 루트오브젝트 삭제
 		shared_ptr<GameObject> gameObject = _gameObject.lock();
 		shared_ptr<Scene> scene = gameObject->GetScene();
 		if (scene)
@@ -310,17 +284,13 @@ void Transform::SetParent(Transform& parentTransform)
 
 
 #ifdef _DEBUG
-	// 새로운 부모의 자식으로 등록. 이미 있는 경우에는 문제가 있는 상황.	
 	auto it = std::find(parentTransform.ChildBegin(), parentTransform.ChildEnd(), this);
 	assert(it == parentTransform.ChildEnd());
 #endif
 
-
-	// 새로운 트랜스폼 노드로 부모 재설정
 	parentTransform.GetChildren().push_back(this);
 	_parentPtr = &parentTransform;
 
-	// 새로운 부모에 맞춰 자신의 로컬 정보를 업데이트
 	UpdateLocal();
 }
 
@@ -339,7 +309,6 @@ void Transform::UpdateLocal()
 
 void Transform::UpdateWorld()
 {
-	// 자신의 월드 트랜스폼을 우선 업데이트
 	if (HasParent())
 	{
 		const Transform& parent = *GetParentPtr();
@@ -350,7 +319,6 @@ void Transform::UpdateWorld()
 		_worldTransformBase = _localTransformBase;
 	}
 
-	// 월드 정보 변경시 자식의 월드 정보도 업데이트
 	UpdateChildrenWorld();
 }
 
@@ -386,8 +354,6 @@ void Transform::RemoveCollider()
 
 void Transform::LoadXML(tinyxml2::XMLDocument& doc, tinyxml2::XMLElement* parent)
 {
-	// ※ 부모 자식 관계는 여기가 아니라, GameObject에서 LoadXML 때 처리
-
 	XmlElement* srtElement = parent->FirstChildElement("Scale");
 	Vec3 scale;
 	scale.X = srtElement->FloatAttribute("X");
@@ -413,15 +379,12 @@ void Transform::LoadXML(tinyxml2::XMLDocument& doc, tinyxml2::XMLElement* parent
 	_worldTransformBase.SetPosition(pos);
 
 	_localTransformBase = _worldTransformBase;
-	// ※ 우선 local 은 월드를 오버라이드하고, 이후 GameObject.cpp 에서 SetParent로, 부모가 있다면 로컬 갱신	
 }
 
 void Transform::WriteXML(tinyxml2::XMLDocument& doc, tinyxml2::XMLElement* parent)
 {
 	tinyxml2::XMLElement* transform = doc.NewElement("Transform");
 	parent->LinkEndChild(transform);
-
-
 
 	tinyxml2::XMLElement* element = nullptr;
 	{
@@ -458,14 +421,9 @@ void Transform::WriteXML(tinyxml2::XMLDocument& doc, tinyxml2::XMLElement* paren
 shared_ptr<Component> Transform::Clone() const
 {
 	shared_ptr<Transform> copy = make_shared<Transform>();
-	// ※ 여기서는 vector의 vector<Transform*> _childPtr 의 size를 0으로 유지하기 위해 *this 를 인자로 넣지 않고, 수동 입력함
 
 	copy->_localTransformBase = _localTransformBase;
 	copy->_worldTransformBase = _worldTransformBase;
-
-
-	// ※ _parentPtr, _childPtr은 여기서 Clone 되지 않고, GameObject 의 Clone의 마무리 작업에서 처리됨
-
 
 	return copy;
 }

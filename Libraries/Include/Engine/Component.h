@@ -63,8 +63,8 @@ public:
 
 
 public:
-	virtual void LoadXML(tinyxml2::XMLDocument& doc, tinyxml2::XMLElement* parent) {} // 추후 =0
-	virtual void WriteXML(tinyxml2::XMLDocument& doc, tinyxml2::XMLElement* parent) {} // 추후 =0
+	virtual void LoadXML(tinyxml2::XMLDocument& doc, tinyxml2::XMLElement* parent) {}
+	virtual void WriteXML(tinyxml2::XMLDocument& doc, tinyxml2::XMLElement* parent) {}
 	virtual shared_ptr<Component> Clone() const = 0;
 
 

@@ -9,7 +9,7 @@
 #include "Utils.h"
 #include "ResourceManager.h"
 
-#include "Scene.h" // @@@@@@@@ TEMP @@@@@@@@@@@@@@@@@@@@
+#include "Scene.h" 
 #include "ModelMesh.h"
 
 ModelAnimator::ModelAnimator(shared_ptr<Shader> shader) : Super(ComponentType::Animator, shader)
@@ -105,26 +105,11 @@ void ModelAnimator::CreateTexture()
 		desc.MipLevels = 1;
 		desc.SampleDesc.Count = 1;
 
-		/*	□ 애니매이션 데이터를 넘길 때 ConstantBuffer 가 아닌 Texture 를 사용
-			 - 애니매이션의 Tranform 데이터는 양이 크므로, ConstantBuffer 는 용량 한계 (64KB 미만 가능) 가 있음
-			 - 따라서 ConstantBuffer 가 아닌 Texture 를 사용해 애니매이션 데이터를 주로 넘김
-
-			○ 넘기는 방법
-			 - Matrix4x4 (float) 은 16바이트이고, DXGI_FORMAT_R32G32B32A32_FLOAT 로 할시, 한픽셀에 총 4바이트
-			   를 넣을 수 있음. 따라서 4개의 픽셀에 하나의 Matrix 정보를 담을 수 있으니,
-			   모든 모델의 Matrix 는 가로축으로, desc.Width = MAX_MODEL_TRANFSORMS * 4  로 담을 수 있음
-			 - 세로축으로는, desc.Height = MAX_MODEL_KEYFRAMES 로 해당 가로의 정보들을, KEYFRAME 별로 모두 담음
-			 - 앞선 가로, 세로로의 한 애니매이션에서의 모델, 키별 정보들을 담은 데이터들을,
-			   desc.ArraySize = _model->GetAnimationCount(); 로 모든 애니매이션의 정보를 담을 수 있음
-		*/
-
-
 
 		const uint32 dataSize = MAX_MODEL_TRANSFORMS * sizeof(Matrix);
 		const uint32 pageSize = dataSize * MAX_MODEL_KEYFRAMES;
 		void* mallocPtr = ::malloc(pageSize * _model->GetAnimationCount());
 
-		// 파편화된 데이터를 조립한다
 		for (uint32 c = 0; c < _model->GetAnimationCount(); c++)
 		{
 			uint32 startOffset = c * pageSize;
@@ -137,8 +122,6 @@ void ModelAnimator::CreateTexture()
 			}
 		}
 
-
-		// 리소스 만들기
 		vector<D3D11_SUBRESOURCE_DATA> subResource(_model->GetAnimationCount());
 
 		for (uint32 c = 0; c < _model->GetAnimationCount(); c++)
@@ -197,11 +180,10 @@ void ModelAnimator::CreateAnimationTransform(uint32 index)
 			}
 			else
 			{
-				// 이미 기본 생성자로 처리됨				
+						
 			}
 
 
-			// ※ 강의와 다르게 사용한다. 직접 만든 TransformBase 로 대체하여 사용함
 			int32 parentIndex = bone->parentIndex;
 
 			TransformBase parentAnimWorld;
@@ -222,7 +204,7 @@ void ModelAnimator::CreateAnimationTransform(uint32 index)
 
 
 			// DEBUG
-#if 0
+#if 0 // Obsolate
 #include "ETCUtils.h"
 			if (f == 1 && b == 1)
 			{
@@ -283,14 +265,12 @@ void ModelAnimator::AnimationRender()
 {
 	UpdateTweenDesc();
 
-	// 애니매이션 현재 프레임 정보
 	RENDER->PushTweenData(_tweenDesc);
 
-	// SRV 를 통해 정보 전달
 	_shader->GetSRV("TransformMap")->SetResource(_srv.Get());
 
 
-#if 0 // ※ 강의에는 있던 코드인데, 없어도 됨. Model Render에서만 필요함. 혹시 모르니 남겨둠
+#if 0 // Obsolate
 	// Bones
 	{
 		BoneDesc boneDesc;
@@ -321,7 +301,6 @@ void ModelAnimator::AnimationRender()
 			{
 				mesh->material->Update();
 			}
-
 
 			// BoneIndex
 			_shader->GetScalar("BoneIndex")->SetInt(mesh->boneIndex);
@@ -370,7 +349,6 @@ void ModelAnimator::ModelRender()
 				mesh->material->Update();
 			}
 
-
 			// BoneIndex
 			_shader->GetScalar("BoneIndex")->SetInt(mesh->boneIndex);
 
@@ -393,15 +371,13 @@ void ModelAnimator::IKRender()
 
 
 
-	// 본별 Transform 연산
+	// Transform
 	vector<TempBoneData> bones = GetTempBoneData();
 	uint32 boneSize = _model->GetBoneCount();
 
 
 
-
-
-	if (_ikHeadIndex == -1) // IKHeadIndex 가 할당되지 않았다면, 찾는다 ( 보통 name 이 Head로 지정되니, wstring 'Head' 를 찾는 방식. 없다면 CRASH 
+	if (_ikHeadIndex == -1)
 	{
 		shared_ptr<ModelBone> bone = _model->GetBoneByName(L"Head");
 		assert(bone != nullptr);
@@ -462,7 +438,7 @@ void ModelAnimator::IKRender()
 
 	Quaternion headRot = headTransform.GetRotation() * GetTransform()->GetRotation();
 
-	Vec3 dir = (headPos - _ikLookData.lookingPos).GetNormalize(); // ※ -ZForward 이니, 반대로!!
+	Vec3 dir = (headPos - _ikLookData.lookingPos).GetNormalize();
 
 	myVec3 headUp = GetTransform()->GetRotation().RotateVector(headTransform.GetYAxis());
 	//Quaternion aimQuat(dir, headTransform.GetYAxis());
@@ -500,7 +476,7 @@ void ModelAnimator::IKRender()
 	}
 
 
-	for (int index : headToHipIndex) // 월드 R Slerp 조정
+	for (int index : headToHipIndex)
 	{
 
 		TransformBase world = bones[index].world;
@@ -664,7 +640,7 @@ void ModelAnimator::Test2_UnderRotateRender()
 	UpdateTweenDesc();
 
 
-	// 본별 Transform 연산
+	// 占쏙옙占쏙옙 Transform 占쏙옙占쏙옙
 	int bonesSize = _model->GetBoneCount();
 	vector<TempBoneData> bones(bonesSize);
 
@@ -695,7 +671,6 @@ void ModelAnimator::Test2_UnderRotateRender()
 		if (_tweenDesc.reservedDesc.animIndex >= 0)
 		{
 			bones[index].local = TransformBase(GetBoneMatrix(false, index));
-			// ※ !!! 이 함수에서는 Local을 사용안하므로, Local 에 reserved AnimTransform 을 담음 !!!
 		}
 
 		bones[index].parent = modelBone->parentIndex;
@@ -708,7 +683,7 @@ void ModelAnimator::Test2_UnderRotateRender()
 
 
 
-	{ // 인덱스 매핑
+	{ 
 		if (_underRotate_Hip_Index == -1)
 		{
 			shared_ptr<ModelBone> hipBone = _model->GetBoneByName(L"Hips");
@@ -716,23 +691,15 @@ void ModelAnimator::Test2_UnderRotateRender()
 			shared_ptr<ModelBone> spine02Bone = _model->GetBoneByName(L"Spine02");
 			assert(spine02Bone != nullptr);
 
-
 			_underRotate_Hip_Index = hipBone->index;
 			_underRotate_LowSpine_Index = spine02Bone->index;
-
 		}
-
 	}
-
-
-
-
 
 	assert(bones[_underRotate_LowSpine_Index].childrens.size() == 1);
 	int middleSpineIndex = bones[_underRotate_LowSpine_Index].childrens[0];
 
 	vector<int> underBoneIndexes;
-
 
 	std::function<void(int)> RegisterUnderBone = [&](int me)
 		{
@@ -752,8 +719,6 @@ void ModelAnimator::Test2_UnderRotateRender()
 			RegisterUnderBone(child);
 		}
 	}
-
-
 
 	::function<void(bool)> RotateBones = [&](bool isFirst)
 		{
@@ -804,10 +769,6 @@ void ModelAnimator::Test2_UnderRotateRender()
 			Quaternion underQuat(Vec3::UnitY, degree);
 			Quaternion lowSpineQuat = Quaternion::Slerp(myQuaternion(), underQuat, _underRotateData.ratios[0]);
 			Quaternion middleSpineQuat = Quaternion::Slerp(myQuaternion(), underQuat, _underRotateData.ratios[1]);
-
-
-
-
 
 			::function<void(const Quaternion&, TransformBase&)> RotateSRT = [](const Quaternion& rotQuat, TransformBase& srt)
 				{
@@ -866,7 +827,6 @@ void ModelAnimator::Test2_UnderRotateRender()
 		{
 			boneDesc.transforms[i] = Matrix::Lerp(bones[i].world.GetSRT(), bones[i].local.GetSRT(), _tweenDesc.tweenRatio);
 		}
-
 	}
 
 	RENDER->PushBoneData(boneDesc);
@@ -886,10 +846,8 @@ void ModelAnimator::Test2_UnderRotateRender()
 				mesh->material->Update();
 			}
 
-
 			// BoneIndex
 			_shader->GetScalar("BoneIndex")->SetInt(mesh->boneIndex);
-
 
 			uint32 stride = mesh->vertexBuffer->GetStride();
 			uint32 offset = mesh->vertexBuffer->GetOffset();
@@ -960,7 +918,6 @@ void ModelAnimator::UpdateTweenDesc()
 	TweenDesc& desc = _tweenDesc;
 
 	float animSpeed = fmaxf(0.f, speed);
-	// 현재 애니매이션 (firstAnim)
 	{
 		desc.currentDesc.sumTime += DT * animSpeed;
 
@@ -996,7 +953,6 @@ void ModelAnimator::UpdateTweenDesc()
 		}
 	}
 
-	// 다음 애니매이션( secondAnim) - 보간할 애니매이션이 있다면..
 	if (desc.reservedDesc.animIndex >= 0)
 	{
 		desc.tweenSumTime += DT * animSpeed;
@@ -1004,13 +960,12 @@ void ModelAnimator::UpdateTweenDesc()
 
 		if (desc.tweenRatio >= 1.f)
 		{
-			// 애니매이션 교체 성공
+
 			desc.currentDesc = desc.reservedDesc;
 			desc.ClearReservedAnim();
 		}
 		else
 		{
-			// 교체중
 			shared_ptr<ModelAnimation> reservedAnim
 				= _model->GetAnimationByIndex(desc.reservedDesc.animIndex);
 			desc.reservedDesc.sumTime += DT * animSpeed;
@@ -1090,8 +1045,6 @@ vector<TempBoneData> ModelAnimator::GetTempBoneData(bool calcLocal /*= true*/)
 			{
 				bone.local = bone.world.WorldToLocal(bones[bone.parent].world);
 			}
-
-
 		}
 	}
 
@@ -1112,8 +1065,6 @@ void ModelAnimator::Play(int animIndex)
 void ModelAnimator::CrossFade(int animIndex, float lerpTime/*=1.f*/)
 {
 	assert(animIndex >= 0 && animIndex < _model->GetAnimationCount());
-
-
 
 	if (_tweenDesc.HasReserve())
 	{
@@ -1139,8 +1090,7 @@ void ModelAnimator::Crossfade_SyncElapsedTime(int animIndex, float lerpTime/*=1.
 
 	_tweenDesc.reservedDesc.currentFrame = _tweenDesc.currentDesc.currentFrame; 
 	_tweenDesc.reservedDesc.nextFrame = _tweenDesc.currentDesc.nextFrame;
-	// ※ 땜빵 코드. 아래 대로 해야될텐데, 갑자기 튀는 현상 있음. 지금은 어차피 MeshAI 에서 받은 같은 프레임이니 이렇게 처리함
-
+	
 	//_model->GetAnimationByIndex(_tweenDesc.currentDesc.animIndex);
 	//float currElapseRatio = (_tweenDesc.currentDesc.currentFrame
 	//	/ static_cast<float>(_model->GetAnimationByIndex(_tweenDesc.currentDesc.animIndex)->frameCount - 1));
@@ -1193,8 +1143,6 @@ shared_ptr<Component> ModelAnimator::Clone() const
 {
 	shared_ptr<ModelAnimator> copy = make_shared<ModelAnimator>(*this);
 
-	// TODO (깊은 복사가 필요한 부분 수동 입력)
-
+	
 	return copy;
-
 }

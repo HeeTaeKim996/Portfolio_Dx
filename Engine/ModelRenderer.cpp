@@ -56,7 +56,6 @@ void ModelRenderer::Render()
 				mesh->material->Update();
 			}
 
-
 			// BoneIndex
 			_shader->GetScalar("BoneIndex")->SetInt(mesh->boneIndex);
 			
@@ -111,8 +110,6 @@ void ModelRenderer::WriteXML(tinyxml2::XMLDocument& doc, tinyxml2::XMLElement* p
 shared_ptr<Component> ModelRenderer::Clone() const
 {
 	shared_ptr<ModelRenderer> copy = make_shared<ModelRenderer>(*this);
-
-	// TODO (깊은 복사가 필요한 부분 수동 입력)
 
 	return copy;
 	

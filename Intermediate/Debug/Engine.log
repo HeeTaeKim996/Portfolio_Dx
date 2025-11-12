@@ -69,10 +69,16 @@
   67 File(s) copied
   C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\SimpleMath.inl
   1 File(s) copied
+  pch.cpp
   BaseCollider.cpp
   BoxCollider.cpp
+  Camera.cpp
   CapsuleCollider.cpp
   Collision.cpp
+  Component.cpp
+  ConstantBuffer.cpp
+  ETCUtils.cpp
+  FileUtils.cpp
   Game.cpp
 C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\SceneManager.h(18,48): warning C4227: anachronism used: qualifiers on reference are ignored
 C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(103,33): warning C4838: conversion from 'float' to 'LONG' requires a narrowing conversion
@@ -86,18 +92,118 @@ C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(709,
 C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(713,42): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
 C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(717,42): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
   GameObject.cpp
+  Geometry.cpp
+  GeometryHelper.cpp
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\GeometryHelper.cpp(1108,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Graphics.cpp
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Graphics.cpp(34,46): warning C4244: '=': conversion from 'const float' to 'UINT', possible loss of data
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Graphics.cpp(35,47): warning C4244: '=': conversion from 'const float' to 'UINT', possible loss of data
+  IReturnGameObjects.cpp
+  IReturnMonobehaviour.cpp
+  ITransferShader.cpp
+  IndexBuffer.cpp
+  InitResource.cpp
+  InputManager.cpp
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\InputManager.cpp(64,34): warning C4244: '=': conversion from 'LONG' to 'float', possible loss of data
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\InputManager.cpp(65,34): warning C4244: '=': conversion from 'LONG' to 'float', possible loss of data
+  Generating Code...
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(134): warning C4715: 'Game::WndProc': not all control paths return a value
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\CapsuleCollider.h(26): warning C4172: returning address of local variable or temporary
+  Compiling...
+  Material.cpp
+  Mesh.cpp
+  MeshRenderer.cpp
+  Model.cpp
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Model.h(40,29): warning C4267: 'return': conversion from 'size_t' to 'uint32', possible loss of data
+  ModelAnimation.cpp
+  ModelAnimator.cpp
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Model.h(40,29): warning C4267: 'return': conversion from 'size_t' to 'uint32', possible loss of data
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelAnimator.cpp(390,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelAnimator.cpp(520,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelAnimator.cpp(819,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelAnimator.cpp(826,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelAnimator.cpp(942,42): warning C4018: '>': signed/unsigned mismatch
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelAnimator.cpp(946,39): warning C4018: '>': signed/unsigned mismatch
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelAnimator.cpp(977,42): warning C4018: '>': signed/unsigned mismatch
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelAnimator.cpp(981,39): warning C4018: '>': signed/unsigned mismatch
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelAnimator.cpp(1059,2): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelAnimator.cpp(1067,2): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\ModelAnimator.cpp(1080,2): warning C4018: '<': signed/unsigned mismatch
+  ModelMesh.cpp
+  ModelRenderer.cpp
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Model.h(40,29): warning C4267: 'return': conversion from 'size_t' to 'uint32', possible loss of data
+  Monobehaviour.cpp
+  MyMathUtils.cpp
+  Pass.cpp
   Physics.cpp
 C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Physics.cpp(78,29): warning C4267: 'initializing': conversion from 'size_t' to 'uint32', possible loss of data
 C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Physics.cpp(185,30): warning C4267: 'initializing': conversion from 'size_t' to 'uint32', possible loss of data
 C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Physics.cpp(329,35): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Physics.cpp(582,30): warning C4267: 'initializing': conversion from 'size_t' to 'uint32', possible loss of data
+  PrefabManager.cpp
+  RenderManager.cpp
+  Renderer.cpp
+  ResourceBase.cpp
+  ResourceManager.cpp
   Rigidbody.cpp
 C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Rigidbody.cpp(92,79): warning C4305: 'argument': truncation from 'double' to 'float'
   Scene.cpp
-  SphereCollider.cpp
+  SceneManager.cpp
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\SceneManager.h(18,48): warning C4227: anachronism used: qualifiers on reference are ignored
   Generating Code...
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Game.cpp(134): warning C4715: 'Game::WndProc': not all control paths return a value
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\CapsuleCollider.h(26): warning C4172: returning address of local variable or temporary
+  Compiling...
+  Shader.cpp
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Shader.cpp(178,3): warning C4267: 'argument': conversion from 'size_t' to 'UINT', possible loss of data
+  SimpleMath.cpp
+  SphereCollider.cpp
+  Technique.cpp
+  Texture.cpp
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Texture.cpp(25,14): warning C4244: '=': conversion from 'size_t' to 'float', possible loss of data
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Texture.cpp(26,14): warning C4244: '=': conversion from 'size_t' to 'float', possible loss of data
+  TimeManager.cpp
+  Timer.cpp
+  TimerActor.cpp
+  TimerManager.cpp
+  Transform.cpp
+  Utils.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\xstring(2860,53): warning C4244: 'argument': conversion from 'wchar_t' to 'const _Elem', possible loss of data
+          with
+          [
+              _Elem=char
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\xstring(2719,1): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct_from_iter<wchar_t*,wchar_t*,_Size_type>(_Iter,const _Sent,_Size)' being compiled
+          with
+          [
+              _Size_type=unsigned __int64,
+              _Iter=wchar_t *,
+              _Sent=wchar_t *,
+              _Size=unsigned __int64
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\xstring(2719,37): message : see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct_from_iter<wchar_t*,wchar_t*,_Size_type>(_Iter,const _Sent,_Size)' being compiled
+          with
+          [
+              _Size_type=unsigned __int64,
+              _Iter=wchar_t *,
+              _Sent=wchar_t *,
+              _Size=unsigned __int64
+          ]
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Utils.cpp(30,1): message : see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
+          with
+          [
+              _Elem=wchar_t,
+              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\Utils.cpp(30,2): message : see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
+          with
+          [
+              _Elem=wchar_t,
+              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+  VertexBuffer.cpp
+  VertexData.cpp
+  Generating Code...
   ImGuiManager.cpp
 C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Engine\SceneManager.h(18,48): warning C4227: anachronism used: qualifiers on reference are ignored
   Engine.vcxproj -> C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Libraries\Lib\Engine\Engine.lib

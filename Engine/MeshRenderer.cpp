@@ -115,7 +115,6 @@ shared_ptr<Component> MeshRenderer::Clone() const
 {
 	shared_ptr<MeshRenderer> copy = make_shared<MeshRenderer>(*this);
 
-	// TODO (깊은 복사가 필요한 부분 수동 입력)
 
 	return copy;
 }

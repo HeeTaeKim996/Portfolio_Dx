@@ -67,7 +67,7 @@ struct UnderRotateData
 
 	float diffDegree;
 	float crossY;
-	map<int, int> animIndexMapping; // ※ FORWARD, RIGHT, LEFT, BACKWARD 순으로, 플레이하는 애니매이션을 매핑해야 함
+	map<int, int> animIndexMapping;
 
 	float ratios[2] =
 	{

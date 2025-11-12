@@ -3,22 +3,16 @@
 
 class BaseCollider;
 
-/*-------------------------------------------
-		MyMath Library 사용 대체 코드
--------------------------------------------*/
-
 class Transform : public Component
 {
 	using Super = Component;
 public:
-	// 생성자
 	Transform();
 	Transform(const TransformBase& InLocalTransformBase);
 
 	virtual void Awake() override;
 
 public:
-	// 로컬 트랜스폼 관련 함수
 	TransformBase& GetLocalTransform() { return _localTransformBase; }
 	const TransformBase& GetLocalTransform() const { return _localTransformBase; }
 	void SetLocalTransform(const TransformBase& InTransformBase);
@@ -57,7 +51,6 @@ public:
 
 
 public:
-	// 월드 트랜스폼 관련 함수
 	TransformBase& GetTransform() { return _worldTransformBase; }
 	const TransformBase& GetTransform() const { return _worldTransformBase; }
 	void SetTransform(const TransformBase& InTransform);
@@ -75,8 +68,8 @@ public:
 	myVec3 GetZAxis() const { return _worldTransformBase.GetZAxis(); }
 
 
-	myVec3 Forward() const { return -_worldTransformBase.GetZAxis(); } // ※ -ZForward
-	myVec3 Right() const { return -_worldTransformBase.GetXAxis(); } // ※ -ZForward
+	myVec3 Forward() const { return -_worldTransformBase.GetZAxis(); } // -ZForward
+	myVec3 Right() const { return -_worldTransformBase.GetXAxis(); } // -ZForward
 	myVec3 Up() const { return _worldTransformBase.GetYAxis(); }
 
 	void SetRotation(const myVec3& InEulerAngles);
@@ -104,7 +97,6 @@ public:
 
 
 public:
-	// 계층 구조 관련 함수
 	void SetRoot() { SetRoot(false); }
 private:
 	void SetRoot(bool isSwitchingParent);
@@ -119,7 +111,6 @@ public:
 	Transform* GetParentPtr() const { return _parentPtr; }
 
 private:
-	// 내부에서만 호출하는 함수
 	void UpdateLocal();
 	void UpdateWorld();
 	void UpdateChildrenWorld();
@@ -135,7 +126,6 @@ public:
 	virtual shared_ptr<Component> Clone() const override;
 
 private:
-	// 멤버 함수
 	TransformBase _localTransformBase;
 	TransformBase _worldTransformBase;
 
