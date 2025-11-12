@@ -1,7 +1,51 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(516,5): warning MSB8004: Intermediate 디렉터리가 슬래시로 끝나지 않습니다. Intermediate 디렉터리의 적절한 평가를 허용하는 데 필요하므로 이 빌드 인스턴스에서 슬래시를 추가합니다.
-C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: 중간 디렉터리(C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Intermediate\Debug\)에 다른 프로젝트(Client.vcxproj, Engine.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(516,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Intermediate\Debug\) contains files shared from another project (Client.vcxproj, Engine.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  pch.cpp
   AssimpTool.cpp
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\AssimpTool\AsType.h(47,20): warning C4244: '=': 'uint32'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/AssimpTool.cpp'을(를) 컴파일하는 중)
-  
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\AssimpTool\AsType.h(46,20): warning C4244: '=': conversion from 'uint32' to 'float', possible loss of data
+  AsType.cpp
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\AssimpTool\AsType.h(46,20): warning C4244: '=': conversion from 'uint32' to 'float', possible loss of data
+  Converter.cpp
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\AssimpTool\AsType.h(46,20): warning C4244: '=': conversion from 'uint32' to 'float', possible loss of data
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\AssimpTool\Converter.cpp(131,57): warning C4267: 'argument': conversion from 'size_t' to 'int32', possible loss of data
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\AssimpTool\Converter.cpp(151,51): warning C4267: 'initializing': conversion from 'size_t' to 'uint32', possible loss of data
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\AssimpTool\Converter.cpp(151,51): warning C4267: 'initializing': conversion from 'size_t' to 'const uint32', possible loss of data
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\AssimpTool\Converter.cpp(262,35): warning C4267: 'argument': conversion from 'size_t' to 'const T', possible loss of data
+          with
+          [
+              T=uint32
+          ]
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\AssimpTool\Converter.cpp(273,36): warning C4267: 'argument': conversion from 'size_t' to 'const T', possible loss of data
+          with
+          [
+              T=uint32
+          ]
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\AssimpTool\Converter.cpp(281,46): warning C4267: 'initializing': conversion from 'size_t' to 'uint32', possible loss of data
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\AssimpTool\Converter.cpp(286,44): warning C4267: 'initializing': conversion from 'size_t' to 'uint32', possible loss of data
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\AssimpTool\Converter.cpp(783,37): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\AssimpTool\Converter.cpp(817,35): warning C4267: 'initializing': conversion from 'size_t' to 'uint32', possible loss of data
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\AssimpTool\Converter.cpp(862,63): warning C4267: 'initializing': conversion from 'size_t' to 'uint32', possible loss of data
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\AssimpTool\Converter.cpp(927,49): warning C4267: 'argument': conversion from 'size_t' to 'const T', possible loss of data
+          with
+          [
+              T=uint32
+          ]
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\AssimpTool\Converter.cpp(933,50): warning C4267: 'argument': conversion from 'size_t' to 'const T', possible loss of data
+          with
+          [
+              T=uint32
+          ]
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\AssimpTool\Converter.cpp(934,93): warning C4267: 'argument': conversion from 'size_t' to 'uint32', possible loss of data
+  Main.cpp
+  Generating Code...
+DirectXTex_debug.lib(DirectXTexImage.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(DirectXTexImage.obj)' or at ''; linking object as if no debug info
+DirectXTex_debug.lib(DirectXTexDDS.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(DirectXTexDDS.obj)' or at ''; linking object as if no debug info
+DirectXTex_debug.lib(DirectXTexD3D11.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(DirectXTexD3D11.obj)' or at ''; linking object as if no debug info
+DirectXTex_debug.lib(DirectXTexUtil.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(DirectXTexUtil.obj)' or at ''; linking object as if no debug info
+DirectXTex_debug.lib(DirectXTexConvert.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(DirectXTexConvert.obj)' or at ''; linking object as if no debug info
+DirectXTex_debug.lib(DirectXTexMipMaps.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(DirectXTexMipMaps.obj)' or at ''; linking object as if no debug info
+DirectXTex_debug.lib(DirectXTexCompress.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(DirectXTexCompress.obj)' or at ''; linking object as if no debug info
+DirectXTex_debug.lib(BC.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(BC.obj)' or at ''; linking object as if no debug info
+DirectXTex_debug.lib(BC4BC5.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(BC4BC5.obj)' or at ''; linking object as if no debug info
+DirectXTex_debug.lib(BC6HBC7.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(BC6HBC7.obj)' or at ''; linking object as if no debug info
   AssimpTool.vcxproj -> C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Binaries\AssimpTool.exe

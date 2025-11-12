@@ -1,7 +1,6 @@
 #pragma once
 
-//using VertexType = VertexTextureNormalTangentBlendData; // 기존 코드
-using VertexType = ModelVertexType; // 수정 ( Read <-> Write 타입 동일 보장 )
+using VertexType = ModelVertexType;
 
 struct asBone
 {
@@ -62,7 +61,7 @@ struct asBoneWeight
 		auto findIt = std::find_if(boneWeights.begin(), boneWeights.end(),
 			[weight](const Pair& p) { return weight > p.second; });
 
-		boneWeights.insert(findIt, Pair(boneIndex, weight)); // ※ 코드 좋다. 유용하고..
+		boneWeights.insert(findIt, Pair(boneIndex, weight));
 	}
 
 

@@ -61,7 +61,7 @@ void Converter::ExportModelData(wstring savePath)
 	ReadModelData(_scene->mRootNode, -1, -1);
 	ReadSkinData();
 
-	{ // 디버그 용도 스킨데이터 CSV 파일 만들기 ( 아래 WriteModelFile 에 바이너리 데이터로 실데이터는 저장됨 )
+	{
 #if 0
 		FILE* file;
 		::fopen_s(&file, "../Vertices.csv", "w");
@@ -108,10 +108,9 @@ void Converter::ReadModelData(aiNode* node, int32 index, int32 parent)
 	bone->name = node->mName.C_Str();
 
 	DirectX::SimpleMath::Matrix dxMat(node->mTransformation[0]); 
-	 //※ SimpleMath Matrix 는 float 주소 하나 주면, 채워주는 코드 있는데, myMatrix에는 안만들었어서, 이렇게 처리
 	Matrix localTransform = MyMathUtils::SimpleMatrixToMyMatrix(dxMat);
-	bone->transform = localTransform.Transpose(); // ※ FBX 는 col_major 로 작성되기에, Transpose 필요
-	// ※ 여기서 얻는 SRT 는 로컬 트랜스폼
+	bone->transform = localTransform.Transpose();
+	
 
 	Matrix parentWorld = Matrix::Identity;
 	if (parent >= 0)
@@ -119,7 +118,6 @@ void Converter::ReadModelData(aiNode* node, int32 index, int32 parent)
 		parentWorld = _bones[parent]->transform;
 	}
 	bone->transform = bone->transform * parentWorld; 
-	// ※ bone->transform 에 로컬 트랜스폼이 아닌, 월드 트랜스폼을 저장. FBX에서 오는 transform 은 로컬트랜스폼 정보
 	_bones.push_back(bone);
 
 
@@ -128,9 +126,6 @@ void Converter::ReadModelData(aiNode* node, int32 index, int32 parent)
 	// Mesh
 	ReadMeshData(node, index);
 
-
-
-	// 재귀함수
 	for (uint32 i = 0; i < node->mNumChildren; i++)
 	{
 		ReadModelData(node->mChildren[i], _bones.size(), index);
@@ -167,8 +162,6 @@ void Converter::ReadMeshData(aiNode* node, int32 bone)
 			if (srcMesh->HasTextureCoords(0))
 			{
 				::memcpy(&vertex.uv, &srcMesh->mTextureCoords[0][v], sizeof(Vec2));
-				/*※ UV 맵을 여러장 사용하는 것에 대비해, [][] 2차원 배열이지만, 대부분 UV를 한장 사용하기 때문에
-					mTextureCoords[0][n] 의 형태로 거의 고정되어 사용 */
 			}
 
 			// Normal
@@ -204,9 +197,6 @@ void Converter::ReadMeshData(aiNode* node, int32 bone)
 }
 void Converter::ReadSkinData()
 {
-	/* ※ FBX 에는 정점별로 본들의 Weight 가 저장돼있는 게 아니라, 본별로 Weight > 0 인 정점들이 기록돼있기 때문에,
-		 코드가 아래와 같다 */
-
 	for (uint32 i = 0; i < _scene->mNumMeshes; i++)
 	{
 		aiMesh* srcMesh = _scene->mMeshes[i];
@@ -221,7 +211,7 @@ void Converter::ReadSkinData()
 		tempVertexBoneWeights.resize(mesh->vertices.size());
 
 
-		// Bone 을 순회하면서 연관된 VertexId, Weight 를 구해서 기록한다
+		// Bone
 		for (uint32 b = 0; b < srcMesh->mNumBones; b++)
 		{
 			aiBone* srcMeshBone = srcMesh->mBones[b];
@@ -237,7 +227,6 @@ void Converter::ReadSkinData()
 			}
 		}
 
-		// 최종 결과 계산
 		for (uint32 v = 0; v < tempVertexBoneWeights.size(); v++)
 		{
 			tempVertexBoneWeights[v].Normalize();
@@ -263,7 +252,6 @@ void Converter::WriteModelFile(wstring finalPath)
 	wstring binaryPath = finalPath + L".mesh";
 	filesystem::path path = filesystem::path(binaryPath);
 
-	// 파일이 없으면 만든다
 	filesystem::create_directory(path.parent_path());
 
 
@@ -492,7 +480,6 @@ void Converter::WriteModelFile(wstring finalPath)
 	wstring xmlPath = finalPath + L"_Mesh.xml";
 	filesystem::path path = filesystem::path(xmlPath);
 
-	// 파일이 없으면 만든다
 	filesystem::create_directory(path.parent_path());
 
 
@@ -593,7 +580,7 @@ void Converter::ReadMaterialData()
 			// Sepcular
 			srcMaterial->Get(AI_MATKEY_COLOR_SPECULAR, color);
 			material->specular = Color(color.r, color.g, color.b, 1.f);
-			srcMaterial->Get(AI_MATKEY_SHININESS, material->specular.w); // ※ 여기서 w는 alpha 가 아닌, 반사광의 강도 제곱승값으로 사용
+			srcMaterial->Get(AI_MATKEY_SHININESS, material->specular.w);
 
 			// Emissive
 			srcMaterial->Get(AI_MATKEY_COLOR_EMISSIVE, color);
@@ -625,7 +612,6 @@ void Converter::WriteMaterialData(wstring finalPath)
 	filesystem::path path = filesystem::path(finalPath);
 
 	filesystem::create_directory(path.parent_path()); 
-	// ※ 최종이 확장자이니, parent_path() 는 확장자가 담긴 파일명. 위 코드는 해당 파일을 생성하는 코드 (이미 있다면 X)
 
 	string folder = path.parent_path().string(); 
 
@@ -703,13 +689,6 @@ string Converter::WriteTexture(string saveFolder, string file)
 	{
 		//string pathStr = saveFolder + fileName;
 		string pathStr = (filesystem::path(saveFolder) / fileName).string();
-		/*	○ string 의 + 와 filesystem 의 /
-			 - 위의 주석이 달린 부분으로 pathStr 을 만들면, saveFolder의 끝이 \ 가 아닐시, 폴더가 fileNAme 과 단순히
-			   합쳐져서, 파일명이 이상해진다.
-			 - 반면 filesystem 의 / 는, \ 가 없을시, \ 를 추가하여 폴더 를 구분하고, \ 가 이미 있을시, + 와 동일하게
-			   작동한다
-			 - 따라서 filesystem 의 / 를 애용하자
-		*/
 
 		if (srcTexture->mHeight == 0)
 		{
@@ -759,37 +738,6 @@ string Converter::WriteTexture(string saveFolder, string file)
 	}
 
 	return fileName;
-
-	/*
-		- 총 3분기로 FBX 에 담긴 텍스쳐 정보를 새로 지정한 폴더에 PNG JPG DDS 파일 중 하나로 복사하고, XML 에 담기 위한
-		  복사된 파일이 있는 경로 주소를 string 으로 리턴하는 함수
-		
-		- 3분기별로 나누어 설명하면,
-		 1) FBX 파일 내에 JPG 또는 PNG 파일이 위치한 경우
-		  - 조건은 if(srcTexture) && if(srcTexture->mHeight == 0) 
-		  - 텍스쳐로 PNG, JPG 로 압축되어 저장된 경우, mHeight 가 계산되지 않은 디펄트 상태(0) 이므로, mHeight == 0 이라면,
-		    압축이 풀리기 전인 PNG JPG 상태이므로, FBX 내 파일(PNG JPG)을 저장 경로에 복사후, 경로만 리턴
-		 2) (PNG, JPG) 파일의 압축이 풀린 상태로, FBX 파일 내에 위치한 경우
-		  - 조건은 if(srcTexture) && else
-		  - PNG, JPG 의 압축이 풀려, [r8.0] [g8.0] [b8.0] [r1.0] ... 형태의 배열로 데이터가 저장된 경우에 해당
-		  - 해당 경우, mHeight 가 계산되므로, > 0 인 경우에 해당
-		  - 배열 데이터를 CreateTexture2D로 텍스쳐로 만든 후, CaptureTexture 로 GPU 의 데이터를 CPU 로 가져와 Img 로 만든 후,
-		    SaveToDDSFile 로 Img 를 DDS (DirectX 의 이미지 저장 형식) 로 해당 경로에 저장 및 저장 경로를 리턴
-		 3) FBX 파일 밖에 PNG JPG 가 위치한 경우
-		  - 조건은 else 
-		  - 가장 흔한 형태로, FBX 파일 밖에 PNG JPG 가 위치한 경우. (Mesh AI 도 이런 형태로 줌)
-		  - CopyFileA 로 기존 경로의 JPG PNG 를 새로운 저장 경로에 복사하고, 경로를 리턴
-
-	
-		※ 위 3경로 모두, 텍스쳐 정보가 정점이 아닌 별도의 파일로 저장됨
-		   이전에 MeshAI 에서 받은 오브젝트에, 땜빵으로 면에 색을 칠해서, 기존 텍스쳐에 오버라이드돼서 사용했던 경우는 위 3분기
-		   에 해당되지 않은 형태로, 정점에 컬러 정보가 담겨 있는 경우 
-		   ( asMesh::mColors 같은 형태로 데이터가 담김. 현재 작성 기준 구조체에 없으므로, 그런 형태는 지원 안하는 듯 )
-	
-
-		※	FileUtils 는 바이너리 데이터를 읽고/쓰기 위해 직접 만든 클래스이다. PNG, JPG 클래스 또한 바이너리 데이터로,
-			읽기, 쓰기가 가능하다
-	*/
 }
 
 
@@ -834,22 +782,15 @@ shared_ptr<asAnimation> Converter::ReadAnimationData(aiAnimation* srcAnimation)
 	animation->name = srcAnimation->mName.C_Str();
 	animation->frameRate = srcAnimation->mTicksPerSecond;
 	animation->frameCount = (uint32)srcAnimation->mDuration + 1;
-	/* ※ mDuration 의 단위는 초 가 아닌 프레임 단위.따라서 애니매이션의 전체 시간(초) 는 mDuration이 아닌,
-		  mDuration / mTickPerSecond 이다.
-		  frameCount 에 + 1 을 한 이유는 mDuration의 사작 프레임 인덱스가 0이기 때문
-		  
-		  ※ 정확히는 mDuration 의 단위가 프레임이 아닌 Tick 이라 하는데, 프레임 이라는 개념에 더 가까운 것 같다 */
-
+	
 	map<string, shared_ptr<vector<asKeyframeData>>> cacheAnimNodes;
 
 	for (uint32 i = 0; i < srcAnimation->mNumChannels; i++)
 	{
 		aiNodeAnim* srcNode = srcAnimation->mChannels[i];
 
-		// 애니매이션 노드 데이터 파싱
 		shared_ptr<vector<asKeyframeData>> keyframeDatas = ParseAnimationNode(animation, srcNode);
 
-		// 현재 찾은 노드 중에 제일 긴 시간으로 애니매이션 시간 갱신
 		animation->duration = max(animation->duration, keyframeDatas->back().time);
 
 		cacheAnimNodes[srcNode->mNodeName.C_Str()] = keyframeDatas;
@@ -916,7 +857,6 @@ shared_ptr<vector<asKeyframeData>> Converter::ParseAnimationNode(shared_ptr<asAn
 		}
 	}
 
-	// Keyframe 늘려주기
 	if (keyframeDatas->size() < animation->frameCount)
 	{
 		uint32 count = animation->frameCount - keyframeDatas->size();
@@ -929,13 +869,6 @@ shared_ptr<vector<asKeyframeData>> Converter::ParseAnimationNode(shared_ptr<asAn
 	}
 
 	return keyframeDatas;
-
-
-	/*
-		- 강의 대로 따라 적었지만, 납득이 되지 않는다. mPositionKeys || mRotationKeys || mScalingKeys 중 하나의 
-		  요소들간에 mTime의 차이가 1미만이라면, 이후에는 모든 요소들이 추출이 되지 않을텐데. if 가 아닌 while을 사용하지
-		  않아도 되는 전제가 있다는 건지
-	*/
 }
 
 void Converter::ReadKeyframeData(shared_ptr<asAnimation> animation, aiNode* srcNode,
@@ -965,7 +898,6 @@ void Converter::ReadKeyframeData(shared_ptr<asAnimation> animation, aiNode* srcN
 		keyframe->transforms.push_back(frameData);
 	}
 
-	// 애니매이션 키프레임 채우기
 	animation->keyframes.push_back(keyframe);
 
 	for (uint32 i = 0; i < srcNode->mNumChildren; i++)
@@ -981,7 +913,7 @@ void Converter::WriteAnimationData(shared_ptr<asAnimation> animation, wstring fi
 {
 #ifdef ANIMATION_READ_WRITE_IN_BINARY_DATA
 	wstring wPath = finalPath + L".clip";
-	filesystem::path path = filesystem::path(wPath); // 폴더가 없으면 만든다
+	filesystem::path path = filesystem::path(wPath);
 	filesystem::create_directory(path.parent_path());
 
 	shared_ptr<FileUtils> file = make_shared<FileUtils>();
@@ -1063,7 +995,7 @@ void Converter::WriteAnimationData(shared_ptr<asAnimation> animation, wstring fi
 	string sPath = Utils::ToString(finalPath);
 	sPath = sPath + ".xml";
 
-	filesystem::path xmlPath = filesystem::path(sPath); // 폴더가 없으면 만든다
+	filesystem::path xmlPath = filesystem::path(sPath);
 	filesystem::create_directory(xmlPath.parent_path());
 
 	doc.SaveFile(sPath.c_str());
