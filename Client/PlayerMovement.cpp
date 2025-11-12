@@ -8,7 +8,6 @@
 #include "Engine/Transform.h"
 #include <cmath>
 #include "Engine/Rigidbody.h"
-//#include "Engine/Game.h"
 #include "Engine/Camera.h"
 #include "Engine/BaseCollider.h"
 #include "Engine/Physics.h"
@@ -206,12 +205,10 @@ void PlayerMovement::Update()
 
 
 			if (diffCos >= COS_45)
-			//if (false)
 			{
 				Crossfade_SyncElapsedTime(Animation::AimingForward);
 			}
 			else if (diffCos >= -COS_45)
-			//else if (false)
 			{
 				if (cross.Y < 0)
 				{
@@ -326,7 +323,7 @@ void PlayerMovement::InvokeMove(int vertical, int horizon, float interpolSpeed/*
 
 
 	shared_ptr<Transform> cameraTransform = _cameraTransform.lock();
-	Vec3 right = -cameraTransform->Right(); // ※ -ZForward이고, 카메라는 거꾸로 이므로
+	Vec3 right = -cameraTransform->Right(); 
 	Vec3 forward = right.Cross(myVec3::UnitY);
 
 
@@ -344,7 +341,7 @@ void PlayerMovement::InvokeMove(Vec2 screenVec, float interpoalSpeed)
 	float sin = screenVec.y >= 0 ? sqrtf(1.f - cos * cos) : -sqrtf(1.f - cos * cos);
 
 	shared_ptr<Transform> cameraTransform = _cameraTransform.lock();
-	Vec3 right = -cameraTransform->Right(); // ※ -ZForward이고, 카메라는 거꾸로 이므로
+	Vec3 right = -cameraTransform->Right(); 
 	Vec3 forward = right.Cross(myVec3::UnitY);
 
 	_movingVec = right * cos + forward * sin;

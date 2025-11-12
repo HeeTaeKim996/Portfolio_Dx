@@ -8,8 +8,8 @@
   MonobehaviourLoader.cpp
   PlayerController.cpp
   PlayerMovement.cpp
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Client\PlayerMovement.cpp(383,40): warning C4244: 'argument': conversion from 'float' to 'myRay::int32', possible loss of data
-C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Client\PlayerMovement.cpp(383,19): warning C4244: 'argument': conversion from 'float' to 'myRay::int32', possible loss of data
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Client\PlayerMovement.cpp(380,40): warning C4244: 'argument': conversion from 'float' to 'myRay::int32', possible loss of data
+C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Client\PlayerMovement.cpp(380,19): warning C4244: 'argument': conversion from 'float' to 'myRay::int32', possible loss of data
   PrefabInitializer.cpp
 C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Libraries\Include\Engine\Model.h(40,29): warning C4267: 'return': conversion from 'size_t' to 'uint32', possible loss of data
 C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Client\PrefabInitializer.cpp(266,26): warning C4244: 'argument': conversion from 'float' to 'int32', possible loss of data
@@ -21,14 +21,4 @@ C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Libraries\Include\En
   SceneCodeLoader.cpp
   TempRotator.cpp
   Generating Code...
-DirectXTex_debug.lib(DirectXTexImage.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(DirectXTexImage.obj)' or at ''; linking object as if no debug info
-DirectXTex_debug.lib(DirectXTexWIC.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(DirectXTexWIC.obj)' or at ''; linking object as if no debug info
-DirectXTex_debug.lib(DirectXTexD3D11.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(DirectXTexD3D11.obj)' or at ''; linking object as if no debug info
-DirectXTex_debug.lib(DirectXTexUtil.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(DirectXTexUtil.obj)' or at ''; linking object as if no debug info
-DirectXTex_debug.lib(DirectXTexConvert.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(DirectXTexConvert.obj)' or at ''; linking object as if no debug info
-DirectXTex_debug.lib(DirectXTexMipMaps.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(DirectXTexMipMaps.obj)' or at ''; linking object as if no debug info
-DirectXTex_debug.lib(DirectXTexCompress.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(DirectXTexCompress.obj)' or at ''; linking object as if no debug info
-DirectXTex_debug.lib(BC.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(BC.obj)' or at ''; linking object as if no debug info
-DirectXTex_debug.lib(BC4BC5.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(BC4BC5.obj)' or at ''; linking object as if no debug info
-DirectXTex_debug.lib(BC6HBC7.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(BC6HBC7.obj)' or at ''; linking object as if no debug info
   Client.vcxproj -> C:\Users\Heetae\source\repos\EnginePortfolio\EnginePorfolio\Binaries\Client.exe

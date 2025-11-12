@@ -42,7 +42,7 @@ void AssimpTool::Init()
 
 void AssimpTool::CreateModelData(wstring folderPath, wstring meshName)
 {
-	// ¡Ø ±Ô¾àÀÌ ÇÊ¿äÇÑµ¥, Assets ÆÄÀÏ¿¡ ÇØ´ç FBX ¸ðµ¨À» ´ãÀº, FBX ¸ðµ¨¸í°ú µ¿ÀÏÇÑ ÆÄÀÏ¸í ÇÊ¿ä
+	// ï¿½ï¿½ ï¿½Ô¾ï¿½ï¿½ï¿½ ï¿½Ê¿ï¿½ï¿½Ñµï¿½, Assets ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½Ø´ï¿½ FBX ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, FBX ï¿½ðµ¨¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½Ê¿ï¿½
 	shared_ptr<Converter> converter = make_shared<Converter>();
 	wstring fbxPath = folderPath + L"/" + meshName + L".fbx";
 	converter->ReadAssetFile(fbxPath);

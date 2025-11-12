@@ -22,7 +22,7 @@ void PlayerController::Start()
 void PlayerController::Update()
 {
 	Vec2 screenVec = Vec2::Zero;
-	if (!INPUT->IsCursorHided() && TIME->GetTimeScale() != 0.f/* 임시로 사용.ESCAPE로 설정 들어갈시, 보이지 않기 위해*/)
+	if (!INPUT->IsCursorHided() && TIME->GetTimeScale() != 0.f)
 	{
 		ImVec2 center(350.f, 700.f);
 		screenVec = DrawVirtualPad(center, 200);
@@ -137,7 +137,7 @@ Vec2 PlayerController::DrawVirtualPad(const ImVec2& center, float radius)
 	ImU32 colCircle = IM_COL32(255, 255, 255, 100);
 	ImU32 colKnob = IM_COL32(255, 255, 255, 200);
 
-	// 배경 원
+	// 占쏙옙占� 占쏙옙
 	draw_list->AddCircleFilled(center, radius, colCircle, 64);
 
 	ImVec2 mousePos = ImGui::GetIO().MousePos;
@@ -150,7 +150,6 @@ Vec2 PlayerController::DrawVirtualPad(const ImVec2& center, float radius)
 	{
 		if (!isActive)
 		{
-			// 첫 클릭이 원 내부일 때만 활성화
 			float distSq = (mousePos.x - center.x) * (mousePos.x - center.x) +
 				(mousePos.y - center.y) * (mousePos.y - center.y);
 			if (distSq <= radius * radius) isActive = true;
@@ -175,11 +174,9 @@ Vec2 PlayerController::DrawVirtualPad(const ImVec2& center, float radius)
 		}
 	}
 
-	// 손잡이
 	draw_list->AddCircleFilled(ImVec2(center.x + offset.x, center.y + offset.y),
 		20.0f, colKnob, 32);
 
-	// 출력 벡터 (0~1 범위, Y는 위가 +)
 	Vec2 result(offset.x / radius, -offset.y / radius);
 	return result;
 }

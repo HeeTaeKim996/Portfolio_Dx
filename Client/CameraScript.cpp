@@ -82,7 +82,7 @@ myVec3 CameraScript::GetPivotPos(shared_ptr<Transform> transform)
 
 void CameraScript::LoadXML(tinyxml2::XMLDocument& doc, tinyxml2::XMLElement* parent)
 {
-	// 필드멤버 업로드 내용 없음
+	
 }
 
 void CameraScript::WriteXML(tinyxml2::XMLDocument& doc, tinyxml2::XMLElement* parent)

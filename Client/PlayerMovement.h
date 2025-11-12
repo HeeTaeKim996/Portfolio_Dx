@@ -7,7 +7,7 @@ class CameraScript;
 
 class PlayerMovement : public Monobehaviour, public AnimationHelper
 {
-	enum Animation // ResourceIntializer2 ÂüÁ¶
+	enum Animation 
 	{
 		Walk = 0,
 		Run = 1,

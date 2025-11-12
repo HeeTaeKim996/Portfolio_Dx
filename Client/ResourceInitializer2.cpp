@@ -19,7 +19,7 @@ void ResourceInitializer2::TransferShader(shared_ptr<Shader> shader)
 		m1->ReadAnimation(L"Run");
 		m1->ReadAnimation(L"Slash");
 
-		// TODO : 모델도 리소스베이스 상속하고, ResourceManager 의 컨테이너에 ADd
+		
 
 		RESOURCES->Add<Model>(m1);
 	}
