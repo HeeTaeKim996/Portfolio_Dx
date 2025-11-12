@@ -26,5 +26,3 @@ void ETCUtils_AddSimpleMatrixToCls(FILE* file, SimpleMath::Matrix matrix)
 		matrix._41, matrix._42, matrix._43, matrix._44);
 }
 #endif
-
-
