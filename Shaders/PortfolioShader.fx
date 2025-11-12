@@ -47,16 +47,6 @@ Texture2DArray TransformMap;
 
 
 
-
-
-
-
-
-
-
-
-
-
 float4 PS_WHITE(MeshOutput input) : SV_TARGET
 {
     return float4(1, 1, 1, 1);
@@ -73,21 +63,6 @@ float4 PS_GREEN(MeshOutput input) : SV_TARGET
 {
     return float4(0, 1, 0, 1);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -172,7 +147,6 @@ Matrix GetAnimationMatrix(VertexTextureNormalTangetBlend input)
         
         
         transform += mul(weights[i], result);
-        // 행렬은 분배 법칙이 성립하니, += 로도 가능 [ (a+b+c+d)v = av +bv + cv + dv ]
     }
 
     return transform;
@@ -186,7 +160,7 @@ MeshOutput VS_ModelAnimator(VertexTextureNormalTangetBlend input)
     
     output.position = mul(input.position, animationMatrix);
     output.position = mul(output.position, W);
-    output.worldPosition = output.position.xyz; // 순서 주의. W 적용후의 pos
+    output.worldPosition = output.position.xyz; 
 
     output.position = mul(output.position, VP);
     //output.position = mul(output.position, V);
@@ -201,10 +175,6 @@ MeshOutput VS_ModelAnimator(VertexTextureNormalTangetBlend input)
     output.tangent = mul(output.tangent, (float3x3) W);
     
     return output;
-    
-    
-    // ※ RS 단계에서 자동으로 퍼스펙티브 보정을 하기 때문에, PS에 input 으로 들어올 때 이미 normalized가 깨진다.
-    //   따라서 여기서 normalized를 굳이 하지 않는다.
 }
 
 
@@ -239,7 +209,7 @@ MeshOutput VS_ModelAnimator_IK(VertexTextureNormalTangetBlend input)
     output.position = mul(input.position, animMatrix);
     
     output.position = mul(output.position, W);
-    output.worldPosition = output.position.xyz; // 순서 주의. W 적용후의 pos
+    output.worldPosition = output.position.xyz; 
 
     output.position = mul(output.position, VP);
 
@@ -408,20 +378,12 @@ VertexTextureData VS_Sky(VertexTextureNormalTanget input)
 {
     VertexTextureData output;
     
-    // ※ 카메라의 위치를 기준으로 Sky Sphere 가 고정되기 때문에, WorldMatrix 를 연산할 필요 없음
-    //   [ Local -> (World 생략) -> View -> Projection ]
-    
     float4 viewPos = mul(float4(input.position.xyz, 0), V);
     float4 clipPos = mul(viewPos, P);
     
     output.position = clipPos.xyzw;
     output.position.z = output.position.w * 0.999999f;
-    /* z = w 를 함으로써, 스카이는 항상 절두체의 원평면과 일치하도록 하여, 스카이가 항상 가장 뒷면에서 렌더링되도록 함
-    ※ 특정 RasterizerState 에서, 원평면과 일치할 때에 렌더링되지 않는 옵션도 있기 때문에, 어떤 DepthStencilState에서도 Sky 가 그려지기 
-       위해, 0.999999f 를 곱함 (야매. 효율 좋게 하기 위해서는 DepthStencilState 를 건드리는 게 좋다 함. )
-    ※ DepthStencilState 를 FX에서 SetDepthSencilState 를 하면 오류가 났었음.. 어떻게 수정해야할지 몰라 일단 야매로 0.999999f 곱함
-    ※ NDC 의 Z 의 최댓값이 1일 때에 해당  */
-    
+   
     output.uv = input.uv;
     
     return output;
@@ -436,9 +398,6 @@ float4 PS_Sky(VertexTextureData input) : SV_TARGET
 
 
 
-
-
-
 technique11 T2
 {
     PASS_VP(P0, VS_MeshRenderer, PS_MeshRenderer)
@@ -449,5 +408,3 @@ technique11 T2
     PASS_RS_VP(P5, RS_Sky, VS_Sky, PS_Sky)
     PASS_RS_VP(P6, FillModeWireFrame, VS_MeshRenderer, PS_GREEN)
 }
-
-

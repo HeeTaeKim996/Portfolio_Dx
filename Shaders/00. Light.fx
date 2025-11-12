@@ -45,7 +45,6 @@ cbuffer MaterialBuffer
 /*--------------
        SRV
 ---------------*/
-
 Texture2D DiffuseMap;
 Texture2D SpecularMap;
 Texture2D NormalMap;
@@ -111,7 +110,7 @@ float4 ComputeLight(float3 normal, float2 uv, float3 worldPosition)
 }
 
 
-void ComputeNormalMapping(inout float3 normal, float3 tangent, float2 uv) // ※ intout==reftValue(cpp)==ref(C#)
+void ComputeNormalMapping(inout float3 normal, float3 tangent, float2 uv)
 {
     float4 map = NormalMap.Sample(LinearSampler, uv);
     if (any(map.rgb) == false)
@@ -119,18 +118,15 @@ void ComputeNormalMapping(inout float3 normal, float3 tangent, float2 uv) // ※ 
         return;
     }
     
-    float3 N = normalize(normal); // ※ PS 로 넘어올 때 normalize 돼서 오지만, 혹시 모르니 normalize 한다 함(강의)
+    float3 N = normalize(normal);
     float3 T = normalize(tangent);
-    float3 B = normalize(cross(N, T)); // ※ 외적 순서 주의 N 이 z, T 가 x이니, Y 인 B는 저 순서로 도출
+    float3 B = normalize(cross(N, T));
     float3x3 TBN = float3x3(T, B, N);
 
     float3 tangentSpaceNormal = 2.f * map.rgb - 1.f; 
-    // 픽셀 저장 rgb 가 unsigned에 최적화됐기에, 그에 맞춰 데이터가 저장됨. -1 _ 1 사이로 변환 필요
 
     float3 worldNormal = mul(tangentSpaceNormal, TBN); 
     
     normal = worldNormal;
 }
-
-
 #endif

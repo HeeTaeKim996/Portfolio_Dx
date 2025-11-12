@@ -597,8 +597,6 @@ shared_ptr<GameObject> GameObject::Clone(shared_ptr<Scene> scene, vector<shared_
 	{
 		shared_ptr<Transform> copyTransform = copy->GetTransform();
 
-
-
 		Transform* parentTransform = transform->GetParentPtr();
 		if (parentTransform)
 		{
